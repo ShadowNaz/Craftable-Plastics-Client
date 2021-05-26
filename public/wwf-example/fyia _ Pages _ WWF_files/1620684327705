@@ -1,0 +1,950 @@
+com_sas_ci_acs.ob_boot = {
+    getDatahubId:function(){
+    return com_sas_ci_acs.ob_util.ckR('_SI_DID_1.021fe6a0b200013b31620eb6');
+	},
+    setDatahubId:function(datahubid){
+		com_sas_ci_acs.ob_util_async.ckW('_SI_DID_1.021fe6a0b200013b31620eb6',datahubid,'/','.worldwildlife.org,.www.worldwildlife.org',1683756327480);
+	}
+};
+(function(doc, script) {
+    var js, 
+        fjs = doc.getElementsByTagName(script)[0],
+        add = function(url, id) {
+            if (doc.getElementById(id)) {return;}
+            js = doc.createElement(script);
+            js.async = 1;
+            js.src = url;
+            id && (js.id = id);
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+if(typeof(com_sas_ci_acs.version)==="undefined" || com_sas_ci_acs.version.split('.')[0] < 1){
+    com_sas_ci_acs.ob_util.ckW('_SI_VID_1.021fe6a0b200013b31620eb6','b7728661330ae141b2e4371c','/','.worldwildlife.org,.www.worldwildlife.org',1683756327480);
+}
+else{
+    com_sas_ci_acs.ob_util_async.ckW('_SI_VID_1.021fe6a0b200013b31620eb6','b7728661330ae141b2e4371c','/','.worldwildlife.org,.www.worldwildlife.org',1683756327480);
+}
+if(typeof(com_sas_ci_acs.version)==="undefined" || com_sas_ci_acs.version.split('.')[0] < 1){
+    com_sas_ci_acs.ob_util.ckW('_SI_DID_1.021fe6a0b200013b31620eb6','b9fbb11f-4674-38c5-8a81-e1c196822a5f','/','.worldwildlife.org,.www.worldwildlife.org',1683756327480);
+}
+else{
+    com_sas_ci_acs.ob_util_async.ckW('_SI_DID_1.021fe6a0b200013b31620eb6','b9fbb11f-4674-38c5-8a81-e1c196822a5f','/','.worldwildlife.org,.www.worldwildlife.org',1683756327480);
+}
+    com_sas_ci_acs.ob_util_async.load_guid = '8715ed953cfb9d5ec0ea6aa5';
+if(typeof(com_sas_ci_acs.version)==="undefined" || com_sas_ci_acs.version.split('.')[0] < 1){
+    com_sas_ci_acs.ob_util.sckW('_SI_SID_1.021fe6a0b200013b31620eb6','b49d1a57cca5c02df7d5c549','/','.worldwildlife.org,.www.worldwildlife.org',new Date().getTime(),376443);
+}
+else{
+    com_sas_ci_acs.ob_util_async.sckW('_SI_SID_1.021fe6a0b200013b31620eb6','b49d1a57cca5c02df7d5c549','/','.worldwildlife.org,.www.worldwildlife.org',new Date().getTime(),376443);
+}
+
+
+}(document, 'script'));
+com_sas_ci_acs._ob_configure.prototype.ob_cfg = function()
+{
+   this.ccs='https://eventsingest-prod.ci360.sas.com/t/e/021fe6a0b200013b31620eb6';
+   this.csu='https://delivery-ci360.worldwildlife.org/hserver';
+   this.maxContentChange=10;
+   this.maxJsVarChange=10;
+this.maxMediaEvents=200;this.maxTotalEvents=2000;   this.batchSpots=true;
+   this.timeout=2000;
+   this.maxCCMatches=10;
+   this.customerSpotDelivery=false;
+   this.virtualSpotClassId='';
+   if(typeof(com_sas_ci_acs.version)==="undefined" || com_sas_ci_acs.version.split('.')[0] < 1){
+      this.load_guid = '8715ed953cfb9d5ec0ea6aa5';
+   }
+   else{
+      this.load_guid = com_sas_ci_acs.ob_util_async.load_guid;
+   }
+   this.thousands_separator=',';
+   this.decimal_separator='.';
+   if(typeof(com_sas_ci_acs.ob_util.setBaseTimestamp)!=="undefined"){
+      com_sas_ci_acs.ob_util.setBaseTimestamp(1620684327480);
+   }
+   this.sendBodyAsHeaderAll=false;
+   this.sendBodyAsHeaderLoad=false;
+   this.trackCancelledEvents=false;
+   this.trackEventResponses=false;
+}
+com_sas_ci_acs._ob_configure.prototype.getVisitorId = function()
+{
+    return com_sas_ci_acs.ob_util.ckR('_SI_VID_1.021fe6a0b200013b31620eb6');
+}
+com_sas_ci_acs._ob_configure.prototype.getDatahubId = function()
+{
+     return com_sas_ci_acs.ob_boot.getDatahubId();
+}
+com_sas_ci_acs._ob_configure.prototype.getSessionId = function()
+{
+    var v=com_sas_ci_acs.ob_util.ckR('_SI_SID_1.021fe6a0b200013b31620eb6');
+    if (v==null) return '';
+    return v.split('.')[0];
+}
+com_sas_ci_acs._ob_configure.prototype.getLastActivity = function()
+{
+    var v=com_sas_ci_acs.ob_util.ckR('_SI_SID_1.021fe6a0b200013b31620eb6');
+    if (v==null) return 0;
+    var a=v.split('.');
+    if (a.length < 2) return 0;
+    return a[1];
+}
+com_sas_ci_acs._ob_configure.prototype.getMaxInactivity = function()
+{
+    var v=com_sas_ci_acs.ob_util.ckR('_SI_SID_1.021fe6a0b200013b31620eb6');
+    if (v==null) return 0;
+    var a=v.split('.');
+    if (a.length < 3) return 0;
+    return a[2];
+}
+com_sas_ci_acs._ob_configure.prototype.updateActivity = function(ts1, ts2)
+{
+ var latestSid=this.getSessionId(); latestSid = latestSid?latestSid:'b49d1a57cca5c02df7d5c549';    com_sas_ci_acs.ob_util.sckW('_SI_SID_1.021fe6a0b200013b31620eb6', latestSid , '/','.worldwildlife.org,.www.worldwildlife.org', ts1, ts2);
+}
+com_sas_ci_acs.ob_event.prototype.termConfiguration = function()
+{
+    var terms = {};
+
+    terms['global'] = {};
+    terms['find'] = {};
+    terms['load'] = {};
+    terms['tsp'] = {};
+    terms['DOMContentLoaded'] = {};
+    terms['click'] = {};
+    terms['exclude'] = {};
+    terms['blur'] = {};
+    terms['change'] = {};
+    terms['cart'] = {};
+    terms['submit'] = {};
+
+if(!com_sas_ci_acs.csz){com_sas_ci_acs.csz=document.documentElement.outerHTML.length;}if(!com_sas_ci_acs.bsz){com_sas_ci_acs.bsz=window.innerWidth+'x'+window.innerHeight;}terms['global']['page_title'] = document.title;
+terms['global']['referrer'] = document.referrer;
+terms['global']['uri'] = document.URL;
+terms['global']['requestedfile'] = com_sas_ci_acs.ob_util.parseUri(document.URL).path;
+terms['load']['tzo'] = new Date().getTimezoneOffset();
+terms['load']['platform'] = navigator.platform;
+terms['load']['cpu'] = navigator.cpuClass;
+terms['load']['port'] = location.port;
+terms['load']['protocol'] = com_sas_ci_acs.ob_util.location();
+terms['load']['flash_enabled'] = com_sas_ci_acs.ob_util.flash().e;
+terms['load']['flash_version'] = com_sas_ci_acs.ob_util.flash().v;
+terms['load']['javascript_enabled'] = true;
+terms['load']['java_enabled'] = com_sas_ci_acs.ob_util.java().e;
+terms['load']['java_version'] = com_sas_ci_acs.ob_util.java().v;
+terms['load']['screen_info'] = screen.width + 'x' + screen.height + '@' + screen.colorDepth;
+if (!com_sas_ci_acs.ob_util.isUndefined(document.documentElement)&&(null!=document.documentElement.getAttribute('lang'))) terms['load']['html.lang'] = document.documentElement.getAttribute('lang');
+if (!com_sas_ci_acs.ob_util.isUndefined(document.documentElement)&&(null!=document.documentElement.getAttribute('xml:lang'))) terms['load']['html.xml:lang'] = document.documentElement.getAttribute('xml:lang');
+terms['load']['browser_language'] = !com_sas_ci_acs.ob_util.isUndefined(navigator.language) ? navigator.language : navigator.browserLanguage;
+terms['load']['character_set'] = com_sas_ci_acs.ob_util.isUndefined(document.charset)?document.characterSet:document.charset;
+terms['load']['csz'] = com_sas_ci_acs.csz;
+terms['load']['bsz'] = com_sas_ci_acs.bsz;
+terms['DOMContentLoaded']['tzo'] = new Date().getTimezoneOffset();
+terms['DOMContentLoaded']['platform'] = navigator.platform;
+terms['DOMContentLoaded']['cpu'] = navigator.cpuClass;
+terms['DOMContentLoaded']['port'] = location.port;
+terms['DOMContentLoaded']['protocol'] = com_sas_ci_acs.ob_util.location();
+terms['DOMContentLoaded']['flash_enabled'] = com_sas_ci_acs.ob_util.flash().e;
+terms['DOMContentLoaded']['flash_version'] = com_sas_ci_acs.ob_util.flash().v;
+terms['DOMContentLoaded']['javascript_enabled'] = true;
+terms['DOMContentLoaded']['java_enabled'] = com_sas_ci_acs.ob_util.java().e;
+terms['DOMContentLoaded']['java_version'] = com_sas_ci_acs.ob_util.java().v;
+terms['DOMContentLoaded']['screen_info'] = screen.width + 'x' + screen.height + '@' + screen.colorDepth;
+if (!com_sas_ci_acs.ob_util.isUndefined(document.documentElement)&&(null!=document.documentElement.getAttribute('lang'))) terms['DOMContentLoaded']['html.lang'] = document.documentElement.getAttribute('lang');
+if (!com_sas_ci_acs.ob_util.isUndefined(document.documentElement)&&(null!=document.documentElement.getAttribute('xml:lang'))) terms['DOMContentLoaded']['html.xml:lang'] = document.documentElement.getAttribute('xml:lang');
+terms['DOMContentLoaded']['browser_language'] = !com_sas_ci_acs.ob_util.isUndefined(navigator.language) ? navigator.language : navigator.browserLanguage;
+terms['DOMContentLoaded']['character_set'] = com_sas_ci_acs.ob_util.isUndefined(document.charset)?document.characterSet:document.charset;
+terms['DOMContentLoaded']['csz'] = com_sas_ci_acs.csz;
+terms['DOMContentLoaded']['bsz'] = com_sas_ci_acs.bsz;
+
+terms['cart']['pe_1201e6071ce343115a4ebc553dcc5d19'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('span#ctl00_MainContentHolder_donationAmount','innerText','after','$');};}();
+terms['cart']['pe_1773cca438b28380356e19dfc097f0e1'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('form#donate_form > fieldset.donate_form_donor_information > input.billing_address_zip[name=\'billing.address.zip\']','innerText','none','');};}();
+terms['cart']['pe_235c8d32d77c57df9dee075e45859900'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('#ctl00_MainContentHolder_lblGrandTotal','innerText','between','Amount:__&&__Summary');};}();
+terms['cart']['pe_3bce9e771ca13bc6c1d943aa00916d0f'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('form#donate_form > fieldset.donate_form_gift_fieldset','innerText','none','');};}();
+terms['cart']['pe_573b9a81abae9b8154175062752be652'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#content > div.wrapper > div#main > div.gutter-horiz-in > div#review > div#reviewCart > div#ctl00_MainContentHolder_pnlWholeCart > ul.list-cart-items.gutter-bottom-fixed-2 > li > div.row > div.span3.break-left > p > span.cart-price','innerText','after','$');};}();
+terms['cart']['pe_5bf3cc06746737b0a9dd482d3244a94c'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('span#ctl00_MainContentHolder_ItemGridView_ctl00_DescriptionLabel > div.cartproductname','innerText','none','');};}();
+terms['cart']['pe_6318f72d3e962aff861514321a14a3ee'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#main > div.gutter-horiz-in > div.donation-info-box','innerText','between','Summary:__&&__($');};}();
+terms['cart']['pe_7e419d16978af7a788402d79e5cab433'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#main > div.gutter-horiz-in > div.donation-info-box','innerText','between','Order ID:__&&__Amount:');};}();
+terms['cart']['pe_916943477d136a6326ec8d183208be14'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#content > div.wrapper > div#main > div.gutter-horiz-in > div#review > div#reviewCart > div#ctl00_MainContentHolder_pnlWholeCart > ul.list-cart-items.gutter-bottom-fixed-2 > li > div.row > div.span9.contain > h4 > span#ctl00_MainContentHolder_ItemGridView_ctl00_DescriptionLabel > div.cartproductname','innerText','between','(__&&__)');};}();
+terms['cart']['pe_9293e54dc06a66970157fc28f1dd8b25'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#content > div.wrapper > div#main > div.gutter-horiz-in > div#review > div#reviewCart > p#ctl00_MainContentHolder_cartItemCount > strong','innerText','before_last','item');};}();
+terms['cart']['pe_972a796a5fe6afc8bbb425c19dd30445'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#main > div.gutter-horiz-in > div.wrapper > div#main > div.gutter-horiz-in > div.donation-info-box','innerText','between','($__&&__)');};}();
+terms['cart']['pe_c7bf81777e0fd95cf40d9247d8124849'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('span#ctl00_MainContentHolder_lblTotal','innerText','after','$');};}();
+terms['cart']['pe_d33c697ac145aaf437d26dd19780b9b1'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#content > div.wrapper > div#main > div.gutter-horiz-in > div#review > div#reviewCart > div#ctl00_MainContentHolder_pnlWholeCart > ul.list-cart-items.gutter-bottom-fixed-2 > li > div.row > div.span9.contain > h4 > span#ctl00_MainContentHolder_ItemGridView_ctl00_DescriptionLabel > div.cartproductname','innerText','none','');};}();
+terms['cart']['pe_df2e5af64796d7e3f627acc5f30506ab'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#main > div.gutter-horiz-in > div.wrapper > div#main > div.gutter-horiz-in > div.donation-info-box','innerText','none','');};}();
+terms['cart']['pe_e6347204106abccb08f144b8e8e7698a'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('input#submitbutton','innerText','none','');};}();
+terms['find']['pe_3c29deb537069f112d7e5dd180a0d86c'] = com_sas_ci_acs._ob_dom.findElement('div#content > div.homepage-cards > div.homepage-card--goal-pillars.homepage-card > div.wrapper');
+terms['find']['pe_3d36df3379c1a1b8e86ebee7fc235b5f'] = com_sas_ci_acs._ob_dom.findElement('div#content > div.homepage-cards > div.wrapper > ul.row > li.row-item.span-1 > div.homepage-card--call-to-action.homepage-card > a.homepage-card__anchor--positioned');
+terms['load']['pe_08168f497e526009e2647bf3e44a8657'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#monthlytab','innerText','none','');};}();
+terms['load']['pe_1505b0a22ed5ab9cd307ae25ff7b28b3'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#ctl00_MainContentHolder_updatePanel > div.span12 > div.accordion.gutter-bottom-4 > div.accordion-item.expanded.gutter-bottom-fixed-4 > div.break-gutter-horiz > div.accordion-content.show > span.add-to-btn > a.btn-orange.btn-simple.btn-break-block','innerText','none','');};}();
+terms['load']['pe_1dc6b72a32a805ab57bc550c919e9e07'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('form#donate_form > fieldset.donate_form_gift_fieldset > div.amount_other > label','innerText','none','');};}();
+terms['load']['pe_2bfa0efcfcc646466398345add50d761'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('#ctl00_MainContentHolder_lblGrandTotal','innerText','after','$');};}();
+terms['load']['pe_34a980abd6abaa11e9b47a6dba25da16'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('form#donate_form > fieldset.donate_form_donor_information > input.donor_email[name=\'donor.email\']','innerText','none','');};}();
+terms['load']['pe_37f3f3ad2d535bac35ef449688101aef'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('form#donate_form:nth-child(3) > fieldset.donate_form_gift_fieldset:nth-child(14) > div.amount.notfirst:nth-child(5) > label:nth-child(2)','innerText','after','$');};}();
+terms['load']['pe_396063e2763c007f11765665877f0c33'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('span#ctl00_MainContentHolder_lblSitePriceName','innerText','after','$');};}();
+terms['load']['pe_3b5870084d9de0e239ff5633e4ef98df'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#onetimetab','innerText','none','');};}();
+terms['load']['pe_544c6981337d1f738f2a4ef989ead1fb'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('form#donate_form:nth-child(3) > fieldset.donate_form_gift_fieldset:nth-child(14) > div.amount.notfirst:nth-child(9) > label:nth-child(2)','innerText','after','$');};}();
+terms['load']['pe_75d74c82ee5007c18bf88a83fd01a8fb'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('form#donate_form:nth-child(3) > fieldset.donate_form_gift_fieldset:nth-child(14) > div.amount:nth-child(4) > label:nth-child(2)','innerText','after','$');};}();
+terms['load']['pe_7a1d05083ff7097b6ef567ed44c41383'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('select#ctl00_MainContentHolder_KitList_ctl03_quantitydropdown','innerText','none','');};}();
+terms['load']['pe_8185c660ab8d15f9637bc0bbcad2950b'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('h1#ctl00_MainContentHolder_lblName','innerText','none','');};}();
+terms['load']['pe_84fe5e04eaf7bb4c2e79d85aa8415d05'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('form#donate_form:nth-child(3) > fieldset.donate_form_gift_fieldset:nth-child(14) > div.amount.notfirst:nth-child(7) > label:nth-child(2)','innerText','after','$');};}();
+terms['load']['pe_8799cd52ca7103b99761e8b40969d6e3'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('form#donate_form > fieldset.donate_form_gift_fieldset','outerHTML','between','<input type=\"radio\" value=\"13069\" id=\"level___&&__\" name=\"level_id\" checked=\"true\">');};}();
+terms['load']['pe_8aa9bd76a5d28baa8edad2cd8a132fe9'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#ctl00_MainContentHolder_updatePanel > div.span12 > div.accordion.gutter-bottom-4 > div.accordion-item.gutter-bottom-fixed-4 > div.break-gutter-horiz > h3.hdr.hdr-tertiary','innerHTML','between','$__&&__&nbsp;');};}();
+terms['load']['pe_906330441bcb0cd60063d906120bffdf'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#content:nth-child(16) > div.wrapper.gutter-top-4:nth-child(2) > div.row.gutter-horiz-in.wysiwyg.lead > div.span12 > p:nth-child(3)','innerText','between','Gift Amount: $__&&__In a few weeks, No goods, World Wildlife ');};}();
+terms['load']['pe_91668d8e3418a54fd607290d4f7533b2'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('form#donate_form > fieldset.donate_form_premium_fieldset','outerHTML','between','value=\"__&&__checked=\"true\"');};}();
+terms['load']['pe_924f522d704fbcd98698163da85363cd'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('a#ctl00_MainContentHolder_breadcrumb > strong','innerText','none','');};}();
+terms['load']['pe_9a21a05b9ddaa66d5b2eb8ab13dd973a'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('#ctl00_MainContentHolder_lblTotal','innerText','none','');};}();
+terms['load']['pe_a4ab30967ae87cb1f5f60e33763c1dd2'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('form#donate_form:nth-child(3) > fieldset.donate_form_gift_fieldset:nth-child(14) > div.amount.notfirst:nth-child(6) > label:nth-child(2)','innerText','after','$');};}();
+terms['load']['pe_acfe144297615c341bbec2645cc0372c'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#renewtab','innerText','none','');};}();
+terms['load']['pe_b3e80b2cb6a140ddae3a85742775d66f'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('h1[id*=\'ctl00_MainContentHolder\']','innerText','regex','^(?:\\w+\\s+){2}([^\\n\\r]+)$');};}();
+terms['load']['pe_c70b69869491d2069c3329b47785a17f'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#ctl00_MainContentHolder_updatePanel:nth-child(3) > div.span12:nth-child(2) > div.break-gutter-horiz:nth-child(1)','innerText','none','');};}();
+terms['load']['pe_c84f687e4d6ace8219af5c3cbdc66fc5'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#ctl00_MainContentHolder_updatePanel > div.span12 > div.accordion.gutter-bottom-4 > div.accordion-item.expanded.gutter-bottom-fixed-4 > div.break-gutter-horiz > h3.hdr.hdr-tertiary','innerText','before',' ');};}();
+terms['load']['pe_c985c070e6888d84f47b2723fdf87b80'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('h1#ctl00_MainContentHolder_productName','innerText','none','');};}();
+terms['load']['pe_cd43a6e57aa409a80f4a007076d0482d'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('#ctl00_MainContentHolder_lblOrderNumber','innerText','none','');};}();
+terms['load']['pe_d60ee5634b336f97c292a8e05e771376'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#mainContent > div.wrapper > div.row > div.entireform.span8 > div.donateheader > div.headertext > h3','innerText','between','Make a__&&__Donation');};}();
+terms['load']['pe_dc01ede10401c49cf627ae9797411f10'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#mainContent > div.wrapper > div.row > div.entireform.span8 > div.donateheader > div.headertext > h3','innerText','none','');};}();
+terms['load']['pe_dff6956b8692c51e65e6c9e016ebf2b8'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('a#ctl00_SpeciesLnk','innerText','none','');};}();
+terms['load']['pe_e40ac365d6b6bc591e01fb1a46b23009'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#ctl00_MainContentHolder_updatePanel > div.span12 > div.accordion.gutter-bottom-4 > div.accordion-item.expanded.gutter-bottom-fixed-4 > div.break-gutter-horiz > div.accordion-content.show > div.listing-grid > ul.items.items-121.items-100 > li.item-198.break-hide > a.modal-trigger > div.container > img','src','none','');};}();
+terms['load']['pe_e5d0ad1415a4729ca03588b7be90e2bd'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#content > div.wrapper > div.row > div.span12 > div.gutter-horiz-in > div.wysiwyg.gutter-bottom-fixed-2 > div.break-hide > div.row > div.span6.push-right','innerHTML','between','img src=\"__&&__\" style=\"margin-top');};}();
+terms['load']['pe_e7a7fd21a766b19c57b0fd10525cd75a'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('#main > div > div.donation-info-box > dl > dd:nth-child(8) > ul','innerText','after','$');};}();
+terms['load']['pe_eab0d481d8feaad3a416b5fd1f1bd02b'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#main > div.gutter-horiz-in > div.donation-info-box','innerText','between','Amount:__&&__Summary:');};}();
+terms['load']['pe_eef6fe128826ceb3d9ee5f14ffbd24da'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#morewaystab','innerText','none','');};}();
+terms['load']['pe_f59392548838ec68f3eab6ada27e0d5e'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('#ctl00_MainContentHolder_lblOrderNumber','innerHTML','none','');};}();
+terms['load']['pe_ff21f99761a4536251386ee3d88594ee'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('form#donate_form:nth-child(3) > fieldset.donate_form_gift_fieldset:nth-child(14) > div.amount:nth-child(8) > label:nth-child(2)','innerText','after','$');};}();
+terms['load']['pe_ffb5cdcf76dc48b51a556704c1392eb3'] = function() {return function() {return com_sas_ci_acs._ob_dom.collectTerm('div#ctl00_MainContentHolder_updatePanel:nth-child(3) > div.span12:nth-child(2) > div.accordion.gutter-bottom-4:nth-child(5) > div.accordion-item.expanded.gutter-bottom-fixed-4:nth-child(1) > div.break-gutter-horiz > h3.hdr.hdr-tertiary:nth-child(2)','innerText','between','$__&&__ ');};}();
+terms['tsp']['pe_91bb3e882010fa5350c30e88e60b812f'] = 'div#navigation:nth-child(1) > a:nth-child(1)';
+terms['tsp']['pe_e7f06f5ee1acf25aa4a2a3ce9e882da9'] = 'input#submitbutton';
+
+    return terms;
+}
+com_sas_ci_acs._ob_cart_configuration.prototype.getCartConfig = function()
+{
+   var cart = {};
+
+
+
+    return cart;
+}
+com_sas_ci_acs._ob_cart_configuration.prototype.getCheckoutConfig = function()
+{
+   var cart = {};
+
+
+
+    return cart;
+}
+com_sas_ci_acs._ob_cart_configuration.prototype.getPurchaseConfig = function()
+{
+   var cart = {};
+
+
+
+    return cart;
+}
+com_sas_ci_acs._ob_jsvar_configuration.prototype.getConfig = function()
+{
+    var jsVars = {};
+
+jsVars['LODM_tA'] = 'LODM_tA';
+jsVars['LODM_tP'] = 'LODM_tP';
+jsVars['LODOT_tP'] = 'LODOT_tP';
+jsVars['LODOT_tl'] = 'LODOT_tl';
+jsVars['dataLayer[0].transactionAffiliation'] = 'dataLayer[0].transactionAffiliation';
+jsVars['dataLayer[0].transactionId'] = 'dataLayer[0].transactionId';
+jsVars['dataLayer[0].transactionProducts[0].name'] = 'dataLayer[0].transactionProducts[0].name';
+jsVars['sas360_ogc_order_id'] = 'sas360_ogc_order_id';
+jsVars['page_id'] = '';
+
+    return jsVars;
+}
+com_sas_ci_acs._ob_jsvarchange_configuration.prototype.getConfig = function()
+{
+    var jsChangeVars = {};
+
+
+    return jsChangeVars;
+}
+com_sas_ci_acs._ob_contentvisible_configuration.prototype.getConfig = function()
+{
+    var contentVars = {};
+
+
+
+    return contentVars;
+}
+com_sas_ci_acs._ob_configure.prototype.getFormConfig = function()
+{
+   var ff = {};
+   ff['nature'] = 'inc';
+
+   ff['obs'] = [];
+   ff['ign'] = [];
+   ff['inc'] = [];
+
+
+ff['obs'][0] = {};
+ff['obs'][0]['domain'] = {};
+ff['obs'][0]['domain']['p'] = {};
+ff['obs'][0]['domain']['p']['attr'] = 'domain';
+ff['obs'][0]['domain']['p']['op'] = 'equals';
+ff['obs'][0]['domain']['p']['values'] = [];
+ff['obs'][0]['domain']['p']['values'][0] = 'gifts.worldwildlife.org';
+ff['obs'][0]['uri'] = [];
+ff['obs'][0]['uri'][0] = {};
+ff['obs'][0]['uri'][0]['p'] = {};
+ff['obs'][0]['uri'][0]['p']['attr'] = 'uri';
+ff['obs'][0]['uri'][0]['p']['op'] = 'equals';
+ff['obs'][0]['uri'][0]['p']['values'] = [];
+ff['obs'][0]['uri'][0]['p']['values'][0] = '/gift-center/RCart-billing.aspx';
+ff['obs'][0]['protocol'] = {};
+ff['obs'][0]['protocol']['p'] = {};
+ff['obs'][0]['protocol']['p']['attr'] = 'protocol';
+ff['obs'][0]['protocol']['p']['op'] = 'equals';
+ff['obs'][0]['protocol']['p']['values'] = [];
+ff['obs'][0]['protocol']['p']['values'][0] = 'http';
+ff['obs'][0]['protocol']['p']['values'][1] = 'https';
+ff['obs'][0]['field'] = [];
+ff['obs'][0]['field'][0] = {};
+ff['obs'][0]['field'][0]['attr'] = 'id';
+ff['obs'][0]['field'][0]['op'] = 'contains';
+ff['obs'][0]['field'][0]['values'] = [];
+ff['obs'][0]['field'][0]['values'][0] = 'ctl00_MainContentHolder_firstNameField';
+ff['obs'][0]['field'][0]['values'][1] = 'ctl00_MainContentHolder_middleNameField';
+ff['obs'][0]['field'][0]['values'][2] = 'ctl00_MainContentHolder_address3Field';
+ff['obs'][0]['field'][0]['values'][3] = 'ctl00_MainContentHolder_address3Field';
+ff['obs'][0]['field'][0]['values'][4] = 'ctl00_MainContentHolder_address4Field';
+ff['obs'][0]['field'][0]['values'][5] = 'ctl00_MainContentHolder_cityField';
+ff['obs'][0]['field'][0]['values'][6] = 'ctl00_MainContentHolder_lastNameField';
+ff['obs'][0]['field'][0]['values'][7] = 'ctl00_MainContentHolder_hiddenBillingFirstName';
+ff['obs'][0]['field'][0]['values'][8] = 'ctl00_MainContentHolder_hiddenBillingLastName';
+ff['obs'][0]['field'][0]['values'][9] = 'ctl00_MainContentHolder_hiddenBillingLine2';
+ff['obs'][0]['field'][0]['values'][10] = 'ctl00_MainContentHolder_hiddenBillingLine3';
+ff['obs'][0]['field'][0]['values'][11] = 'ctl00_MainContentHolder_hiddenBillingCity';
+ff['obs'][0]['field'][0]['values'][12] = 'ctl00_MainContentHolder_hiddenBillingRegionName';
+ff['obs'][0]['field'][0]['values'][13] = 'ctl00_MainContentHolder_hiddenBillingPostalCode';
+ff['obs'][0]['field'][0]['values'][14] = 'ctl00_MainContentHolder_hiddenBillingCountryName';
+ff['obs'][0]['field'][0]['values'][15] = 'ctl00_MainContentHolder_hiddenBillingPhone';
+ff['obs'][0]['field'][0]['values'][16] = 'ctl00_MainContentHolder_hiddenBillingPhone';
+ff['obs'][1] = {};
+ff['obs'][1]['domain'] = {};
+ff['obs'][1]['domain']['p'] = {};
+ff['obs'][1]['domain']['p']['attr'] = 'domain';
+ff['obs'][1]['domain']['p']['op'] = 'equals';
+ff['obs'][1]['domain']['p']['values'] = [];
+ff['obs'][1]['domain']['p']['values'][0] = 'gifts.worldwildlife.org';
+ff['obs'][1]['uri'] = [];
+ff['obs'][1]['uri'][0] = {};
+ff['obs'][1]['uri'][0]['p'] = {};
+ff['obs'][1]['uri'][0]['p']['attr'] = 'uri';
+ff['obs'][1]['uri'][0]['p']['op'] = 'equals';
+ff['obs'][1]['uri'][0]['p']['values'] = [];
+ff['obs'][1]['uri'][0]['p']['values'][0] = '/gift-center/RCart-payment.aspx';
+ff['obs'][1]['protocol'] = {};
+ff['obs'][1]['protocol']['p'] = {};
+ff['obs'][1]['protocol']['p']['attr'] = 'protocol';
+ff['obs'][1]['protocol']['p']['op'] = 'equals';
+ff['obs'][1]['protocol']['p']['values'] = [];
+ff['obs'][1]['protocol']['p']['values'][0] = 'http';
+ff['obs'][1]['protocol']['p']['values'][1] = 'https';
+ff['obs'][1]['form'] = [];
+ff['obs'][1]['form'][0] = {};
+ff['obs'][1]['form'][0]['attr'] = 'id';
+ff['obs'][1]['form'][0]['op'] = 'contains';
+ff['obs'][1]['form'][0]['values'] = [];
+ff['obs'][1]['form'][0]['values'][0] = 'ctl00_MainContentHolder_formStep5';
+ff['obs'][2] = {};
+ff['obs'][2]['domain'] = {};
+ff['obs'][2]['domain']['p'] = {};
+ff['obs'][2]['domain']['p']['attr'] = 'domain';
+ff['obs'][2]['domain']['p']['op'] = 'equals';
+ff['obs'][2]['domain']['p']['values'] = [];
+ff['obs'][2]['domain']['p']['values'][0] = 'gifts.worldwildlife.org';
+ff['obs'][2]['uri'] = [];
+ff['obs'][2]['uri'][0] = {};
+ff['obs'][2]['uri'][0]['p'] = {};
+ff['obs'][2]['uri'][0]['p']['attr'] = 'uri';
+ff['obs'][2]['uri'][0]['p']['op'] = 'equals';
+ff['obs'][2]['uri'][0]['p']['values'] = [];
+ff['obs'][2]['uri'][0]['p']['values'][0] = '/gift-center/RCart-review.aspx';
+ff['obs'][2]['protocol'] = {};
+ff['obs'][2]['protocol']['p'] = {};
+ff['obs'][2]['protocol']['p']['attr'] = 'protocol';
+ff['obs'][2]['protocol']['p']['op'] = 'equals';
+ff['obs'][2]['protocol']['p']['values'] = [];
+ff['obs'][2]['protocol']['p']['values'][0] = 'http';
+ff['obs'][2]['protocol']['p']['values'][1] = 'https';
+ff['obs'][2]['form'] = [];
+ff['obs'][2]['form'][0] = {};
+ff['obs'][2]['form'][0]['attr'] = 'id';
+ff['obs'][2]['form'][0]['op'] = 'contains';
+ff['obs'][2]['form'][0]['values'] = [];
+ff['obs'][2]['form'][0]['values'][0] = 'ctl00_MainContentHolder_FName';
+ff['obs'][2]['form'][0]['values'][1] = 'ctl00_MainContentHolder_MName';
+ff['obs'][2]['form'][0]['values'][2] = 'ctl00_MainContentHolder_LName';
+ff['obs'][2]['form'][0]['values'][3] = 'ctl00_MainContentHolder_Line3';
+ff['obs'][2]['form'][0]['values'][4] = 'ctl00_MainContentHolder_Line4';
+ff['obs'][2]['form'][0]['values'][5] = 'ctl00_MainContentHolder_City';
+ff['obs'][2]['form'][0]['values'][6] = 'ctl00_MainContentHolder_Postal';
+ff['obs'][2]['form'][0]['values'][7] = 'ctl00_MainContentHolder_Phone';
+ff['obs'][3] = {};
+ff['obs'][3]['domain'] = {};
+ff['obs'][3]['domain']['p'] = {};
+ff['obs'][3]['domain']['p']['attr'] = 'domain';
+ff['obs'][3]['domain']['p']['op'] = 'equals';
+ff['obs'][3]['domain']['p']['values'] = [];
+ff['obs'][3]['domain']['p']['values'][0] = 'gifts.worldwildlife.org';
+ff['obs'][3]['uri'] = [];
+ff['obs'][3]['uri'][0] = {};
+ff['obs'][3]['uri'][0]['p'] = {};
+ff['obs'][3]['uri'][0]['p']['attr'] = 'uri';
+ff['obs'][3]['uri'][0]['p']['op'] = 'equals';
+ff['obs'][3]['uri'][0]['p']['values'] = [];
+ff['obs'][3]['uri'][0]['p']['values'][0] = '/gift-center/RCart-review.aspx';
+ff['obs'][3]['protocol'] = {};
+ff['obs'][3]['protocol']['p'] = {};
+ff['obs'][3]['protocol']['p']['attr'] = 'protocol';
+ff['obs'][3]['protocol']['p']['op'] = 'equals';
+ff['obs'][3]['protocol']['p']['values'] = [];
+ff['obs'][3]['protocol']['p']['values'][0] = 'http';
+ff['obs'][3]['protocol']['p']['values'][1] = 'https';
+ff['obs'][3]['form'] = [];
+ff['obs'][3]['form'][0] = {};
+ff['obs'][3]['form'][0]['attr'] = 'id';
+ff['obs'][3]['form'][0]['op'] = 'contains';
+ff['obs'][3]['form'][0]['values'] = [];
+ff['obs'][3]['form'][0]['values'][0] = 'reviewPayment';
+ff['obs'][4] = {};
+ff['obs'][4]['domain'] = {};
+ff['obs'][4]['domain']['p'] = {};
+ff['obs'][4]['domain']['p']['attr'] = 'domain';
+ff['obs'][4]['domain']['p']['op'] = 'equals';
+ff['obs'][4]['domain']['p']['values'] = [];
+ff['obs'][4]['domain']['p']['values'][0] = 'gifts.worldwildlife.org';
+ff['obs'][4]['uri'] = [];
+ff['obs'][4]['uri'][0] = {};
+ff['obs'][4]['uri'][0]['p'] = {};
+ff['obs'][4]['uri'][0]['p']['attr'] = 'uri';
+ff['obs'][4]['uri'][0]['p']['op'] = 'equals';
+ff['obs'][4]['uri'][0]['p']['values'] = [];
+ff['obs'][4]['uri'][0]['p']['values'][0] = '/gift-center/RCart-itemOptions.aspx';
+ff['obs'][4]['protocol'] = {};
+ff['obs'][4]['protocol']['p'] = {};
+ff['obs'][4]['protocol']['p']['attr'] = 'protocol';
+ff['obs'][4]['protocol']['p']['op'] = 'equals';
+ff['obs'][4]['protocol']['p']['values'] = [];
+ff['obs'][4]['protocol']['p']['values'][0] = 'http';
+ff['obs'][4]['protocol']['p']['values'][1] = 'https';
+ff['obs'][4]['field'] = [];
+ff['obs'][4]['field'][0] = {};
+ff['obs'][4]['field'][0]['attr'] = 'id';
+ff['obs'][4]['field'][0]['op'] = 'contains';
+ff['obs'][4]['field'][0]['values'] = [];
+ff['obs'][4]['field'][0]['values'][0] = 'ctl00_MainContentHolder_ItemGridView_ctl00_ddShippingAddress';
+ff['obs'][5] = {};
+ff['obs'][5]['domain'] = {};
+ff['obs'][5]['domain']['p'] = {};
+ff['obs'][5]['domain']['p']['attr'] = 'domain';
+ff['obs'][5]['domain']['p']['op'] = 'equals';
+ff['obs'][5]['domain']['p']['values'] = [];
+ff['obs'][5]['domain']['p']['values'][0] = 'support.worldwildlife.org';
+ff['obs'][5]['uri'] = [];
+ff['obs'][5]['uri'][0] = {};
+ff['obs'][5]['uri'][0]['p'] = {};
+ff['obs'][5]['uri'][0]['p']['attr'] = 'uri';
+ff['obs'][5]['uri'][0]['p']['op'] = 'equals';
+ff['obs'][5]['uri'][0]['p']['values'] = [];
+ff['obs'][5]['uri'][0]['p']['values'][0] = '/site/SPageServer/';
+ff['obs'][5]['protocol'] = {};
+ff['obs'][5]['protocol']['p'] = {};
+ff['obs'][5]['protocol']['p']['attr'] = 'protocol';
+ff['obs'][5]['protocol']['p']['op'] = 'equals';
+ff['obs'][5]['protocol']['p']['values'] = [];
+ff['obs'][5]['protocol']['p']['values'][0] = 'http';
+ff['obs'][5]['protocol']['p']['values'][1] = 'https';
+ff['obs'][5]['field'] = [];
+ff['obs'][5]['field'][0] = {};
+ff['obs'][5]['field'][0]['attr'] = 'id';
+ff['obs'][5]['field'][0]['op'] = 'contains';
+ff['obs'][5]['field'][0]['values'] = [];
+ff['obs'][5]['field'][0]['values'][0] = 'donorFirstName';
+ff['obs'][5]['field'][0]['values'][1] = 'donorLastName';
+ff['obs'][5]['field'][0]['values'][2] = 'donorStreet1';
+ff['obs'][5]['field'][0]['values'][3] = 'donorStreet2';
+ff['obs'][5]['field'][0]['values'][4] = 'city';
+ff['obs'][5]['field'][0]['values'][5] = 'postalCode';
+ff['obs'][6] = {};
+ff['obs'][6]['domain'] = {};
+ff['obs'][6]['domain']['p'] = {};
+ff['obs'][6]['domain']['p']['attr'] = 'domain';
+ff['obs'][6]['domain']['p']['op'] = 'all';
+ff['obs'][6]['domain']['p']['values'] = [];
+ff['obs'][6]['uri'] = [];
+ff['obs'][6]['protocol'] = {};
+ff['obs'][6]['protocol']['p'] = {};
+ff['obs'][6]['protocol']['p']['attr'] = 'protocol';
+ff['obs'][6]['protocol']['p']['op'] = 'equals';
+ff['obs'][6]['protocol']['p']['values'] = [];
+ff['obs'][6]['protocol']['p']['values'][0] = 'http';
+ff['obs'][6]['protocol']['p']['values'][1] = 'https';
+ff['obs'][6]['field'] = [];
+ff['obs'][6]['field'][0] = {};
+ff['obs'][6]['field'][0]['attr'] = 'id';
+ff['obs'][6]['field'][0]['op'] = 'contains';
+ff['obs'][6]['field'][0]['values'] = [];
+ff['obs'][6]['field'][0]['values'][0] = 'ctl00_MainContentHolder_lblDonorName';
+ff['obs'][6]['field'][0]['values'][1] = 'DonorName';
+ff['obs'][6]['field'][0]['values'][2] = 'ctl00_MainContentHolder_lblOrderName';
+ff['obs'][6]['field'][0]['values'][3] = 'OrderName';
+ff['obs'][7] = {};
+ff['obs'][7]['domain'] = {};
+ff['obs'][7]['domain']['p'] = {};
+ff['obs'][7]['domain']['p']['attr'] = 'domain';
+ff['obs'][7]['domain']['p']['op'] = 'all';
+ff['obs'][7]['domain']['p']['values'] = [];
+ff['obs'][7]['uri'] = [];
+ff['obs'][7]['protocol'] = {};
+ff['obs'][7]['protocol']['p'] = {};
+ff['obs'][7]['protocol']['p']['attr'] = 'protocol';
+ff['obs'][7]['protocol']['p']['op'] = 'equals';
+ff['obs'][7]['protocol']['p']['values'] = [];
+ff['obs'][7]['protocol']['p']['values'][0] = 'http';
+ff['obs'][7]['protocol']['p']['values'][1] = 'https';
+ff['obs'][7]['field'] = [];
+ff['obs'][7]['field'][0] = {};
+ff['obs'][7]['field'][0]['attr'] = 'name';
+ff['obs'][7]['field'][0]['op'] = 'equals';
+ff['obs'][7]['field'][0]['values'] = [];
+ff['obs'][7]['field'][0]['values'][0] = 'cons_last_name';
+ff['obs'][7]['field'][0]['values'][1] = 'cons_first_name';
+ff['obs'][8] = {};
+ff['obs'][8]['domain'] = {};
+ff['obs'][8]['domain']['p'] = {};
+ff['obs'][8]['domain']['p']['attr'] = 'domain';
+ff['obs'][8]['domain']['p']['op'] = 'all';
+ff['obs'][8]['domain']['p']['values'] = [];
+ff['obs'][8]['uri'] = [];
+ff['obs'][8]['protocol'] = {};
+ff['obs'][8]['protocol']['p'] = {};
+ff['obs'][8]['protocol']['p']['attr'] = 'protocol';
+ff['obs'][8]['protocol']['p']['op'] = 'equals';
+ff['obs'][8]['protocol']['p']['values'] = [];
+ff['obs'][8]['protocol']['p']['values'][0] = 'http';
+ff['obs'][8]['protocol']['p']['values'][1] = 'https';
+ff['obs'][8]['field'] = [];
+ff['obs'][8]['field'][0] = {};
+ff['obs'][8]['field'][0]['attr'] = 'id';
+ff['obs'][8]['field'][0]['op'] = 'contains';
+ff['obs'][8]['field'][0]['values'] = [];
+ff['obs'][8]['field'][0]['values'][0] = 'billing_addr';
+ff['obs'][8]['field'][0]['values'][1] = 'street1';
+ff['obs'][8]['field'][0]['values'][2] = 'street2';
+ff['obs'][8]['field'][0]['values'][3] = 'street3';
+ff['obs'][8]['field'][0]['values'][4] = 'street4';
+ff['obs'][8]['field'][0]['values'][5] = 'street5';
+ff['obs'][8]['field'][0]['values'][6] = 'phone';
+ff['obs'][8]['field'][0]['values'][7] = 'cons_pw_component';
+ff['obs'][8]['field'][0]['values'][8] = 'credit_payment';
+ff['obs'][8]['field'][0]['values'][9] = 'address3Field';
+ff['obs'][8]['field'][0]['values'][10] = 'address4Field';
+ff['obs'][8]['field'][0]['values'][11] = 'USERNAME';
+ff['obs'][8]['field'][0]['values'][12] = 'USERNAME_3';
+ff['obs'][8]['field'][0]['values'][13] = 'billing_first_namename';
+ff['obs'][8]['field'][0]['values'][14] = 'billing_first_namesubmit';
+ff['obs'][8]['field'][0]['values'][15] = 'billing_last_namename';
+ff['obs'][8]['field'][0]['values'][16] = 'billing_last_namesubmit';
+ff['obs'][8]['field'][0]['values'][17] = 'birth_date_DAY';
+ff['obs'][8]['field'][0]['values'][18] = 'birth_date_MONTH';
+ff['obs'][8]['field'][0]['values'][19] = 'billing_addr_cityname';
+ff['obs'][8]['field'][0]['values'][20] = 'billing_addr_citysubmit';
+ff['obs'][8]['field'][0]['values'][21] = 'billing_addr_country';
+ff['obs'][8]['field'][0]['values'][22] = 'billing_addr_countrysubmit';
+ff['obs'][8]['field'][0]['values'][23] = 'billing_addr_state';
+ff['obs'][8]['field'][0]['values'][24] = 'billing_addr_statesubmit';
+ff['obs'][8]['field'][0]['values'][25] = 'billing_first_namename';
+ff['obs'][8]['field'][0]['values'][26] = 'billing_first_namesubmit';
+ff['obs'][8]['field'][0]['values'][27] = 'billing_last_namename';
+ff['obs'][8]['field'][0]['values'][28] = 'billing_last_donor_email_address';
+ff['obs'][8]['field'][0]['values'][29] = 'name';
+ff['obs'][8]['field'][0]['values'][30] = 'donor_email_addresssubmit';
+ff['obs'][8]['field'][0]['values'][31] = 'honor_gift_notification_fn_input';
+ff['obs'][8]['field'][0]['values'][32] = 'honor_gift_notification_ln_input';
+ff['obs'][8]['field'][0]['values'][33] = 'billing_first';
+ff['obs'][8]['field'][0]['values'][34] = 'billing_last_namename';
+ff['obs'][8]['field'][0]['values'][35] = 'participantname';
+ff['obs'][8]['field'][0]['values'][36] = 'tr_recognition_nameanonymous';
+ff['obs'][8]['field'][0]['values'][37] = 'tr_recognition_namerec_namename';
+ff['obs'][8]['field'][0]['values'][38] = 'tr_show_gift_to_publicname';
+ff['obs'][8]['field'][0]['values'][39] = 'namesubmit';
+ff['obs'][8]['field'][0]['values'][40] = 'publicname';
+ff['obs'][8]['field'][0]['values'][41] = 'namename';
+ff['obs'][8]['field'][0]['values'][42] = 'billing.add';
+ff['obs'][8]['field'][0]['values'][43] = 'billing.name';
+ff['obs'][8]['field'][0]['values'][44] = 'card_';
+ff['obs'][8]['field'][0]['values'][45] = 'ctl00_MainContentHolder_lblDonorName';
+ff['obs'][8]['field'][0]['values'][46] = 'DonorName';
+ff['obs'][8]['field'][0]['values'][47] = 'ctl00_MainContentHolder_lblOrderName';
+ff['obs'][8]['field'][0]['values'][48] = 'OrderName';
+ff['obs'][8]['field'][0]['values'][49] = 'last_name';
+ff['obs'][8]['field'][0]['values'][50] = 'Last_Name';
+ff['obs'][8]['field'][0]['values'][51] = 'Last_name';
+ff['obs'][8]['field'][0]['values'][52] = 'first_name';
+ff['obs'][8]['field'][0]['values'][53] = 'First_Name';
+ff['obs'][8]['field'][0]['values'][54] = 'First_name';
+ff['obs'][8]['field'][0]['values'][55] = 'fname';
+ff['obs'][8]['field'][0]['values'][56] = 'lname';
+ff['obs'][8]['field'][0]['values'][57] = 'firstname';
+ff['obs'][8]['field'][0]['values'][58] = 'bonusname';
+ff['obs'][8]['field'][0]['values'][59] = 'bonusName';
+ff['obs'][8]['field'][0]['values'][60] = 'lastname';
+ff['obs'][8]['field'][0]['values'][61] = 'first_name';
+ff['obs'][8]['field'][0]['values'][62] = 'cons_last_name';
+ff['obs'][8]['field'][0]['values'][63] = 'cons_first_name';
+ff['obs'][8]['field'][0]['values'][64] = 'cons_user_name';
+ff['obs'][8]['field'][0]['values'][65] = 'namename';
+ff['obs'][8]['field'][0]['values'][66] = 'fn_input';
+ff['obs'][8]['field'][0]['values'][67] = 'ln_input';
+ff['obs'][8]['field'][0]['values'][68] = 'tr_recognition';
+ff['obs'][8]['field'][0]['values'][69] = 'tr_recognition_namerec';
+ff['obs'][8]['field'][0]['values'][70] = 'tribute_ecard_subjectname';
+ff['obs'][8]['field'][0]['values'][71] = 'Payment_typeverify_bank_account_submit';
+ff['obs'][8]['field'][0]['values'][72] = 'Payment_typecc';
+ff['obs'][8]['field'][0]['values'][73] = 'payment_typeank_accountname';
+ff['obs'][8]['field'][0]['values'][74] = 'Proxy_id';
+ff['obs'][8]['field'][0]['values'][75] = 'USERNAME';
+ff['obs'][8]['field'][0]['values'][76] = 'login';
+ff['obs'][8]['field'][0]['values'][77] = 'billing.name.first';
+ff['obs'][8]['field'][0]['values'][78] = 'billing.name.last';
+ff['obs'][8]['field'][0]['values'][79] = 'op.chg.ConsPasswd';
+ff['obs'][8]['field'][0]['values'][80] = 'billing.address.zip';
+ff['obs'][8]['field'][0]['values'][81] = 'billing.name.first';
+ff['obs'][8]['field'][0]['values'][82] = 'billing.name.last';
+ff['obs'][8]['field'][0]['values'][83] = 'ctl00_cartoptionsoverlay_firstNameField';
+ff['obs'][8]['field'][0]['values'][84] = 'ctl00_cartoptionsoverlay_lastNameField';
+ff['obs'][9] = {};
+ff['obs'][9]['domain'] = {};
+ff['obs'][9]['domain']['p'] = {};
+ff['obs'][9]['domain']['p']['attr'] = 'domain';
+ff['obs'][9]['domain']['p']['op'] = 'equals';
+ff['obs'][9]['domain']['p']['values'] = [];
+ff['obs'][9]['domain']['p']['values'][0] = 'gifts.worldwildlife.org';
+ff['obs'][9]['domain']['p']['values'][1] = 'support.worldwildlife.org';
+ff['obs'][9]['uri'] = [];
+ff['obs'][9]['protocol'] = {};
+ff['obs'][9]['protocol']['p'] = {};
+ff['obs'][9]['protocol']['p']['attr'] = 'protocol';
+ff['obs'][9]['protocol']['p']['op'] = 'equals';
+ff['obs'][9]['protocol']['p']['values'] = [];
+ff['obs'][9]['protocol']['p']['values'][0] = 'http';
+ff['obs'][9]['protocol']['p']['values'][1] = 'https';
+ff['obs'][9]['field'] = [];
+ff['obs'][9]['field'][0] = {};
+ff['obs'][9]['field'][0]['attr'] = 'name';
+ff['obs'][9]['field'][0]['op'] = 'contains';
+ff['obs'][9]['field'][0]['values'] = [];
+ff['obs'][9]['field'][0]['values'][0] = 'name';
+ff['obs'][9]['field'][0]['values'][1] = 'street1';
+ff['obs'][9]['field'][0]['values'][2] = 'street2';
+ff['obs'][9]['field'][0]['values'][3] = 'street3';
+ff['obs'][9]['field'][0]['values'][4] = 'street4';
+ff['obs'][9]['field'][0]['values'][5] = 'street5';
+ff['obs'][9]['field'][0]['values'][6] = 'street6';
+ff['obs'][9]['field'][0]['values'][7] = 'phone';
+ff['obs'][10] = {};
+ff['obs'][10]['domain'] = {};
+ff['obs'][10]['domain']['p'] = {};
+ff['obs'][10]['domain']['p']['attr'] = 'domain';
+ff['obs'][10]['domain']['p']['op'] = 'equals';
+ff['obs'][10]['domain']['p']['values'] = [];
+ff['obs'][10]['domain']['p']['values'][0] = 'support.worldwildlife.org';
+ff['obs'][10]['uri'] = [];
+ff['obs'][10]['uri'][0] = {};
+ff['obs'][10]['uri'][0]['p'] = {};
+ff['obs'][10]['uri'][0]['p']['attr'] = 'uri';
+ff['obs'][10]['uri'][0]['p']['op'] = 'equals';
+ff['obs'][10]['uri'][0]['p']['values'] = [];
+ff['obs'][10]['uri'][0]['p']['values'][0] = '/site/SPageServer/';
+ff['obs'][10]['protocol'] = {};
+ff['obs'][10]['protocol']['p'] = {};
+ff['obs'][10]['protocol']['p']['attr'] = 'protocol';
+ff['obs'][10]['protocol']['p']['op'] = 'equals';
+ff['obs'][10]['protocol']['p']['values'] = [];
+ff['obs'][10]['protocol']['p']['values'][0] = 'http';
+ff['obs'][10]['protocol']['p']['values'][1] = 'https';
+ff['obs'][10]['field'] = [];
+ff['obs'][10]['field'][0] = {};
+ff['obs'][10]['field'][0]['attr'] = 'name';
+ff['obs'][10]['field'][0]['op'] = 'contains';
+ff['obs'][10]['field'][0]['values'] = [];
+ff['obs'][10]['field'][0]['values'][0] = 'name';
+ff['obs'][10]['field'][0]['values'][1] = 'address';
+ff['nature'] = 'ign';
+ff['ign'][0] = {};
+ff['ign'][0]['domain'] = {};
+ff['ign'][0]['domain']['p'] = {};
+ff['ign'][0]['domain']['p']['attr'] = 'domain';
+ff['ign'][0]['domain']['p']['op'] = 'all';
+ff['ign'][0]['domain']['p']['values'] = [];
+ff['ign'][0]['uri'] = [];
+ff['ign'][0]['protocol'] = {};
+ff['ign'][0]['protocol']['p'] = {};
+ff['ign'][0]['protocol']['p']['attr'] = 'protocol';
+ff['ign'][0]['protocol']['p']['op'] = 'equals';
+ff['ign'][0]['protocol']['p']['values'] = [];
+ff['ign'][0]['protocol']['p']['values'][0] = 'http';
+ff['ign'][0]['protocol']['p']['values'][1] = 'https';
+ff['ign'][0]['form'] = [];
+ff['ign'][0]['form'][0] = {};
+ff['ign'][0]['form'][0]['attr'] = 'id';
+ff['ign'][0]['form'][0]['op'] = 'equals';
+ff['ign'][0]['form'][0]['values'] = [];
+ff['ign'][0]['form'][0]['values'][0] = 'donate_form_payment';
+ff['ign'][1] = {};
+ff['ign'][1]['domain'] = {};
+ff['ign'][1]['domain']['p'] = {};
+ff['ign'][1]['domain']['p']['attr'] = 'domain';
+ff['ign'][1]['domain']['p']['op'] = 'all';
+ff['ign'][1]['domain']['p']['values'] = [];
+ff['ign'][1]['uri'] = [];
+ff['ign'][1]['protocol'] = {};
+ff['ign'][1]['protocol']['p'] = {};
+ff['ign'][1]['protocol']['p']['attr'] = 'protocol';
+ff['ign'][1]['protocol']['p']['op'] = 'equals';
+ff['ign'][1]['protocol']['p']['values'] = [];
+ff['ign'][1]['protocol']['p']['values'][0] = 'http';
+ff['ign'][1]['protocol']['p']['values'][1] = 'https';
+ff['ign'][1]['field'] = [];
+ff['ign'][1]['field'][0] = {};
+ff['ign'][1]['field'][0]['attr'] = 'id';
+ff['ign'][1]['field'][0]['op'] = 'contains';
+ff['ign'][1]['field'][0]['values'] = [];
+ff['ign'][1]['field'][0]['values'][0] = 'payment_type';
+ff['ign'][1]['field'][0]['values'][1] = 'payment_typebank';
+ff['ign'][1]['field'][0]['values'][2] = 'payment_typecc';
+ff['ign'][1]['field'][0]['values'][3] = 'payment_typerounting';
+ff['inc'][0] = {};
+ff['inc'][0]['domain'] = {};
+ff['inc'][0]['domain']['p'] = {};
+ff['inc'][0]['domain']['p']['attr'] = 'domain';
+ff['inc'][0]['domain']['p']['op'] = 'equals';
+ff['inc'][0]['domain']['p']['values'] = [];
+ff['inc'][0]['domain']['p']['values'][0] = 'gifts.worldwildlife.org';
+ff['inc'][0]['uri'] = [];
+ff['inc'][0]['protocol'] = {};
+ff['inc'][0]['protocol']['p'] = {};
+ff['inc'][0]['protocol']['p']['attr'] = 'protocol';
+ff['inc'][0]['protocol']['p']['op'] = 'equals';
+ff['inc'][0]['protocol']['p']['values'] = [];
+ff['inc'][0]['protocol']['p']['values'][0] = 'http';
+ff['inc'][0]['protocol']['p']['values'][1] = 'https';
+ff['inc'][0]['field'] = [];
+ff['inc'][0]['field'][0] = {};
+ff['inc'][0]['field'][0]['attr'] = 'id';
+ff['inc'][0]['field'][0]['op'] = 'equals';
+ff['inc'][0]['field'][0]['values'] = [];
+ff['inc'][0]['field'][0]['values'][0] = 'q';
+ff['inc'][0]['form'] = [];
+ff['inc'][0]['form'][0] = {};
+ff['inc'][0]['form'][0]['attr'] = 'id';
+ff['inc'][0]['form'][0]['op'] = 'equals';
+ff['inc'][0]['form'][0]['values'] = [];
+ff['inc'][0]['form'][0]['values'][0] = 'cse-search-box';
+ff['inc'][1] = {};
+ff['inc'][1]['domain'] = {};
+ff['inc'][1]['domain']['p'] = {};
+ff['inc'][1]['domain']['p']['attr'] = 'domain';
+ff['inc'][1]['domain']['p']['op'] = 'equals';
+ff['inc'][1]['domain']['p']['values'] = [];
+ff['inc'][1]['domain']['p']['values'][0] = 'support.worldwildlife.org';
+ff['inc'][1]['uri'] = [];
+ff['inc'][1]['protocol'] = {};
+ff['inc'][1]['protocol']['p'] = {};
+ff['inc'][1]['protocol']['p']['attr'] = 'protocol';
+ff['inc'][1]['protocol']['p']['op'] = 'equals';
+ff['inc'][1]['protocol']['p']['values'] = [];
+ff['inc'][1]['protocol']['p']['values'][0] = 'http';
+ff['inc'][1]['protocol']['p']['values'][1] = 'https';
+ff['inc'][1]['form'] = [];
+ff['inc'][1]['form'][0] = {};
+ff['inc'][1]['form'][0]['attr'] = 'id';
+ff['inc'][1]['form'][0]['op'] = 'equals';
+ff['inc'][1]['form'][0]['values'] = [];
+ff['inc'][1]['form'][0]['values'][0] = 'cse-search-box';
+ff['inc'][1]['field'] = [];
+ff['inc'][1]['field'][0] = {};
+ff['inc'][1]['field'][0]['attr'] = 'id';
+ff['inc'][1]['field'][0]['op'] = 'equals';
+ff['inc'][1]['field'][0]['values'] = [];
+ff['inc'][1]['field'][0]['values'][0] = 'q';
+ff['inc'][2] = {};
+ff['inc'][2]['domain'] = {};
+ff['inc'][2]['domain']['p'] = {};
+ff['inc'][2]['domain']['p']['attr'] = 'domain';
+ff['inc'][2]['domain']['p']['op'] = 'equals';
+ff['inc'][2]['domain']['p']['values'] = [];
+ff['inc'][2]['domain']['p']['values'][0] = 'www.worldwildlife.org';
+ff['inc'][2]['uri'] = [];
+ff['inc'][2]['protocol'] = {};
+ff['inc'][2]['protocol']['p'] = {};
+ff['inc'][2]['protocol']['p']['attr'] = 'protocol';
+ff['inc'][2]['protocol']['p']['op'] = 'equals';
+ff['inc'][2]['protocol']['p']['values'] = [];
+ff['inc'][2]['protocol']['p']['values'][0] = 'http';
+ff['inc'][2]['protocol']['p']['values'][1] = 'https';
+ff['inc'][2]['form'] = [];
+ff['inc'][2]['form'][0] = {};
+ff['inc'][2]['form'][0]['attr'] = 'id';
+ff['inc'][2]['form'][0]['op'] = 'equals';
+ff['inc'][2]['form'][0]['values'] = [];
+ff['inc'][2]['form'][0]['values'][0] = 'cse-search-box';
+ff['inc'][2]['field'] = [];
+ff['inc'][2]['field'][0] = {};
+ff['inc'][2]['field'][0]['attr'] = 'id';
+ff['inc'][2]['field'][0]['op'] = 'equals';
+ff['inc'][2]['field'][0]['values'] = [];
+ff['inc'][2]['field'][0]['values'][0] = 'q';
+ff['inc'][3] = {};
+ff['inc'][3]['domain'] = {};
+ff['inc'][3]['domain']['p'] = {};
+ff['inc'][3]['domain']['p']['attr'] = 'domain';
+ff['inc'][3]['domain']['p']['op'] = 'contains';
+ff['inc'][3]['domain']['p']['values'] = [];
+ff['inc'][3]['domain']['p']['values'][0] = 'support.worldwildlife.org';
+ff['inc'][3]['uri'] = [];
+ff['inc'][3]['protocol'] = {};
+ff['inc'][3]['protocol']['p'] = {};
+ff['inc'][3]['protocol']['p']['attr'] = 'protocol';
+ff['inc'][3]['protocol']['p']['op'] = 'equals';
+ff['inc'][3]['protocol']['p']['values'] = [];
+ff['inc'][3]['protocol']['p']['values'][0] = 'http';
+ff['inc'][3]['protocol']['p']['values'][1] = 'https';
+ff['inc'][3]['form'] = [];
+ff['inc'][3]['form'][0] = {};
+ff['inc'][3]['form'][0]['attr'] = 'name';
+ff['inc'][3]['form'][0]['op'] = 'equals';
+ff['inc'][3]['form'][0]['values'] = [];
+ff['inc'][3]['form'][0]['values'][0] = 'donate_form';
+ff['inc'][3]['field'] = [];
+ff['inc'][3]['field'][0] = {};
+ff['inc'][3]['field'][0]['attr'] = 'name';
+ff['inc'][3]['field'][0]['op'] = 'equals';
+ff['inc'][3]['field'][0]['values'] = [];
+ff['inc'][3]['field'][0]['values'][0] = 'donor.email';
+
+    return ff;
+}
+com_sas_ci_acs._ob_configure.prototype.isCollectionEnabled = function()
+{
+   var collect = {};
+
+
+collect['clicks'] = 'true';
+collect['contentevents'] = 'true';
+collect['fieldinteractions'] = 'true';
+collect['formsubmits'] = 'true';
+collect['jsvars'] = 'true';
+collect['media'] = 'true';
+collect['mouseovers'] = 'false';
+collect['pageloads'] = 'true';
+
+   collect['pageloads_eventid'] = [];
+   collect['pageloads_eventname'] = [];
+   collect['pageloads_eventtype'] = [];
+   collect['pageloads_eventsubtype'] = [];
+   collect['pageloads_prd_selector'] = [];
+   collect['pageloads_system_type'] = [];
+   collect['formsubmits_eventid'] = [];
+   collect['formsubmits_eventname'] = [];
+   collect['formsubmits_system_type'] = [];
+   collect['formsubmits_elements'] = [];
+   collect['clicks_eventid'] = [];
+   collect['clicks_eventname'] = [];
+   collect['clicks_system_type'] = [];
+   collect['changevar_eventid'] = [];
+   collect['changevar_attributes'] = [];
+   collect['content_eventid'] = [];
+   collect['content_attributes'] = [];
+   collect['pageloads_attributes'] = [];
+   collect['formsubmits_attributes'] = [];
+   collect['clicks_attributes'] = [];
+   collect['event_properties'] = [];
+   collect['clickThrough_system_eventid'] = [];
+   collect['impression_system_eventid'] = [];
+   collect['pageloads_system_eventid'] = [];
+   collect['newsession_system_eventid'] = [];
+   collect['focus_system_eventid'] = [];
+   collect['defocus_system_eventid'] = [];
+   collect['notification_opened_system_eventid'] = [];
+   collect['email_open_system_eventid'] = [];
+   collect['email_send_system_eventid'] = [];
+   collect['email_view_system_eventid'] = [];
+   collect['email_click_system_eventid'] = [];
+   collect['email_hard_bounce_system_eventid'] = [];
+   collect['email_opt-out_system_eventid'] = [];
+   collect['email_spam_system_eventid'] = [];
+   collect['email_reply_system_eventid'] = [];
+   collect['loginevent_attributes'] = [];
+
+collect['email_click_system_eventid'].push('00361aca-8a74-48c7-ac66-a918625fe380');
+
+collect['notification_opened_system_eventid'].push('0ff80683-f698-4516-be5e-ae0335a4dab8');
+
+collect['pageloads_eventid'].push('10abc9ab-30f3-4ba9-8bf9-280db62d84e1');
+collect['pageloads_eventname']['10abc9ab-30f3-4ba9-8bf9-280db62d84e1'] = 'cons_id';
+collect['pageloads_eventtype']['10abc9ab-30f3-4ba9-8bf9-280db62d84e1'] = 'pageView';
+collect['loginevent_attributes']['10abc9ab-30f3-4ba9-8bf9-280db62d84e1'] = [];
+collect['loginevent_attributes']['10abc9ab-30f3-4ba9-8bf9-280db62d84e1'][0]=[];collect['loginevent_attributes']['10abc9ab-30f3-4ba9-8bf9-280db62d84e1'][0]['name']='User_ID_Attribute';collect['loginevent_attributes']['10abc9ab-30f3-4ba9-8bf9-280db62d84e1'][0]['cart_att_type']='OTHER';collect['loginevent_attributes']['10abc9ab-30f3-4ba9-8bf9-280db62d84e1'][0]['cookie']='cons_id';collect['loginevent_attributes']['10abc9ab-30f3-4ba9-8bf9-280db62d84e1'][0]['attribute']='';collect['loginevent_attributes']['10abc9ab-30f3-4ba9-8bf9-280db62d84e1'][0]['type']='string';collect['loginevent_attributes']['10abc9ab-30f3-4ba9-8bf9-280db62d84e1'][0]['filter']='none';collect['loginevent_attributes']['10abc9ab-30f3-4ba9-8bf9-280db62d84e1'][0]['filterpattern']='';collect['loginevent_attributes']['10abc9ab-30f3-4ba9-8bf9-280db62d84e1'][0]['login_event_type'] = 'login_id';
+collect['loginevent_attributes']['10abc9ab-30f3-4ba9-8bf9-280db62d84e1'][0]['obscured'] = 'false';
+collect['event_properties']['10abc9ab-30f3-4ba9-8bf9-280db62d84e1'] = [];
+collect['event_properties']['10abc9ab-30f3-4ba9-8bf9-280db62d84e1'][0]=[];collect['event_properties']['10abc9ab-30f3-4ba9-8bf9-280db62d84e1'][0]['cookie']='cons_id';collect['event_properties']['10abc9ab-30f3-4ba9-8bf9-280db62d84e1'][0]['name']='.*';collect['event_properties']['10abc9ab-30f3-4ba9-8bf9-280db62d84e1'][0]['filter']='regex';
+
+collect['email_view_system_eventid'].push('1371e87e-afb8-4a00-81cf-2d0a54e36ac2');
+
+
+
+collect['pageloads_eventid'].push('2c9adc88-f684-4c49-a79f-be5e568ac137');
+collect['pageloads_eventname']['2c9adc88-f684-4c49-a79f-be5e568ac137'] = 'cons_id';
+collect['pageloads_eventtype']['2c9adc88-f684-4c49-a79f-be5e568ac137'] = 'pageView';
+collect['loginevent_attributes']['2c9adc88-f684-4c49-a79f-be5e568ac137'] = [];
+collect['loginevent_attributes']['2c9adc88-f684-4c49-a79f-be5e568ac137'][0]=[];collect['loginevent_attributes']['2c9adc88-f684-4c49-a79f-be5e568ac137'][0]['name']='User_ID_Attribute';collect['loginevent_attributes']['2c9adc88-f684-4c49-a79f-be5e568ac137'][0]['cart_att_type']='OTHER';collect['loginevent_attributes']['2c9adc88-f684-4c49-a79f-be5e568ac137'][0]['cookie']='cons_id';collect['loginevent_attributes']['2c9adc88-f684-4c49-a79f-be5e568ac137'][0]['attribute']='';collect['loginevent_attributes']['2c9adc88-f684-4c49-a79f-be5e568ac137'][0]['type']='string';collect['loginevent_attributes']['2c9adc88-f684-4c49-a79f-be5e568ac137'][0]['filter']='none';collect['loginevent_attributes']['2c9adc88-f684-4c49-a79f-be5e568ac137'][0]['filterpattern']='';collect['loginevent_attributes']['2c9adc88-f684-4c49-a79f-be5e568ac137'][0]['login_event_type'] = 'login_id';
+collect['loginevent_attributes']['2c9adc88-f684-4c49-a79f-be5e568ac137'][0]['obscured'] = 'false';
+collect['event_properties']['2c9adc88-f684-4c49-a79f-be5e568ac137'] = [];
+collect['event_properties']['2c9adc88-f684-4c49-a79f-be5e568ac137'][0]=[];collect['event_properties']['2c9adc88-f684-4c49-a79f-be5e568ac137'][0]['cookie']='cons_id';collect['event_properties']['2c9adc88-f684-4c49-a79f-be5e568ac137'][0]['name']='';collect['event_properties']['2c9adc88-f684-4c49-a79f-be5e568ac137'][0]['filter']='exists';
+
+
+
+collect['email_send_system_eventid'].push('6a837ef1-db7b-43a4-8553-66f2ad41bc39');
+
+collect['email_open_system_eventid'].push('6f781a3b-4039-4b0e-9a02-1c7e7c2ac367');
+
+collect['pageloads_system_eventid'].push('8482da5e-0d69-42fe-87e7-c1c97020314f');
+
+
+
+
+
+collect['email_hard_bounce_system_eventid'].push('98fd98c9-1913-4d9c-b715-192b5df66f12');
+
+collect['clickThrough_system_eventid'].push('9e663bd1-683c-44c1-aec2-41367c1f9946');
+
+
+
+collect['impression_system_eventid'].push('b825564c-a412-449b-808b-e4a9e242d2ee');
+
+collect['defocus_system_eventid'].push('c6704970-fa1e-43f2-ab25-22b2211fd268');
+
+collect['email_opt-out_system_eventid'].push('c8d1378f-2db1-4297-86fa-d3492b03e315');
+
+collect['newsession_system_eventid'].push('d1276635-f773-405e-a281-2b9ba990b8c4');
+
+collect['email_reply_system_eventid'].push('daa9c7ca-3f94-4385-884a-3c3ab867e40b');
+
+
+
+collect['email_spam_system_eventid'].push('f3e48a33-61ed-418b-89bf-d70cf3cb94c2');
+
+collect['focus_system_eventid'].push('f93741e5-0151-4d4d-9306-c3c39017fdcf');
+
+
+    return collect;
+}
+
+com_sas_ci_acs.ob_util.specialClickProcessing=true;
+com_sas_ci_acs.cacheCollect=com_sas_ci_acs._ob_configure.prototype.isCollectionEnabled();com_sas_ci_acs._ob_configure.prototype.isCollectionEnabled=function(){return com_sas_ci_acs.cacheCollect;};
+com_sas_ci_acs.ob_configure.initialize();
