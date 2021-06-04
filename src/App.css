@@ -36,3 +36,105 @@
     transform: rotate(360deg);
   }
 }
+
+.check-box {
+    width: 250px;
+    display: table;
+    border-spacing: 5px;
+    cursor: pointer;
+    background: #efefef;
+    border: 1px solid #ccc;
+    height: 40px;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: all .2s;
+    box-shadow: 0 0 0 0 #000;
+    font-size: 12px;
+}
+
+input[type="checkbox"]+.ingredient-checkbox {
+    display: table-cell;
+    width: 30px;
+    border: 1px solid #ccc;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background: #fff;
+    transition: all .2s;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="checkbox"]+span+.ingredient-checkbox-label {
+    display: table-cell;
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+}
+
+input[type="checkbox"]+.ingredient-checkbox {
+    display: table-cell;
+    width: 30px;
+    border: 1px solid #ccc;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background: #fff;
+    transition: all .2s;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+user agent stylesheet
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+.tile-wrapper {
+    position: relative;
+    width: 630px;
+    z-index: 3;
+    overflow: visible!important;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
