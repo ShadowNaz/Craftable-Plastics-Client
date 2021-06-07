@@ -21,7 +21,7 @@ function App() {
 	return (
 		<Router>
 	<div>
-			<img src="1070197-1200w.png" alt=""/>
+			<img src="/1070197-1200w.png" alt=""/>
 		<div style={{position: 'absolute', top: '150px', left: '50px', color: 'black'}}><h1>Craftable Plastics</h1>
 			<p><h2>Recycling Plastic into usable projects.</h2></p>
 		</div>	
@@ -33,7 +33,7 @@ function App() {
 			<div class="row card-group gutter-bottom-4">
 			<div class="col-md-4">
 			<Link to="/checklist">
-				<div class="card"> <img class="card-img-top" src="checklist-image.png" alt="Card image cap"/>
+				<div class="card"> <img class="card-img-top" src="/checklist-image.png" alt="Card image cap"/>
 				<div class="card-body" style={{backgroundColor: 'black', color: 'white'}}>
 					<h2 class="card-title"><b>Ingredient Checklist</b></h2>
 					<p class="card-text">Your check list of common plastics that you can use to do your part in helping our planet.</p>
@@ -45,7 +45,7 @@ function App() {
 			</div>
 			<div class="col-md-4">
 			<Link to="/achievements">
-				<div class="card"> <img class="card-img-top" src="achievements-image.png" alt="Card image cap"/>
+				<div class="card"> <img class="card-img-top" src="/achievements-image.png" alt="Card image cap"/>
 				<div class="card-body" style={{backgroundColor: 'black', color: 'white'}}>
 					<h2 class="card-title"><b>Achievements</b></h2>
 					<p class="card-text">Check you achievement progress to see how much you've completed and have to complete.</p>
@@ -57,7 +57,7 @@ function App() {
 			</div>
 			<div class="col-md-4">
 			<Link to="/quests">
-				<div class="card"> <img class="card-img-top" src="quest-image.png" alt="Card image cap"/>
+				<div class="card"> <img class="card-img-top" src="/quest-image.png" alt="Card image cap"/>
 				<div class="card-body" style={{backgroundColor: 'black', color: 'white'}}>
 					<h2 class="card-title"><b>Quests</b></h2>
 					<p class="card-text">See what daily, weekly or monthly quests are available for you to do.</p>
@@ -92,8 +92,20 @@ function App() {
 					<Route path="/quests">
 						<Quests />
 					</Route>
-					<Route path="/pictures">
-						<Pictures />
+					<Route path="/results">
+						<Results />
+					</Route>
+					<Route path="/recipes/1">
+						<RecipeOne />
+					</Route>
+					<Route path="/recipes/2">
+						<RecipeTwo />
+					</Route>
+					<Route path="/recipes/3">
+						<RecipeThree />
+					</Route>
+					<Route path="/plans/1">
+						<PlanOne />
 					</Route>
 				</Switch>
 			</div>
@@ -123,7 +135,7 @@ function Checklist() {
 	<div class="row">
 		<div class="col-md-3" style={{position: "relative", overflow: "hidden"}}>
 			<div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}> 
-				<div><img src="tiles/buttons-tile.png" /></div>
+				<div><img src="/tiles/buttons-tile.png" /></div>
 				<div style={{height:"30px"}}>
 					<div>
 						<label class="label">
@@ -139,7 +151,7 @@ function Checklist() {
 			</div>
 			<br/>
 			<div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}> 
-			<div><img src="tiles/cardboard-tile.png" /></div>
+			<div><img src="/tiles/cardboard-tile.png" /></div>
 			<div style={{height:"30px"}}>
 				<div>
 					<label class="label">
@@ -155,7 +167,7 @@ function Checklist() {
 			</div>
 			<br/>
 			<div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}> 
-			<div><img src="tiles/paper-tile.png" /></div>
+			<div><img src="/tiles/paper-tile.png" /></div>
 			<div style={{height:"30px"}}>
 				<div>
 					<label class="label">
@@ -171,7 +183,7 @@ function Checklist() {
 			</div>
 			<br/>
 			<div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}> 
-			<div><img src="tiles/crayon-tile.png" /></div>
+			<div><img src="/tiles/crayon-tile.png" /></div>
 			<div style={{height:"30px"}}>
 				<div>
 					<label class="label">
@@ -187,7 +199,7 @@ function Checklist() {
 			</div>
 			<br/>
 			<div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}> 
-			<div><img src="tiles/paint-tile.png" /></div>
+			<div><img src="/tiles/paint-tile.png" /></div>
 			<div style={{height:"30px"}}>
 				<div>
 					<label class="label">
@@ -203,7 +215,7 @@ function Checklist() {
 			</div>
 			<br/>
 			<div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}> 
-			<div><img src="tiles/bag-tile.png" /></div>
+			<div><img src="/tiles/bag-tile.png" /></div>
 			<div style={{height:"30px"}}>
 				<div>
 					<label class="label">
@@ -221,7 +233,7 @@ function Checklist() {
 		</div>
 		<div class="col-md-3" style={{position: "relative", overflow: "hidden"}}>
 			<div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}> 
-			<div><img src="tiles/bottle-tile.png" /></div>
+			<div><img src="/tiles/bottle-tile.png" /></div>
 			<div style={{height:"30px"}}>
 				<div>
 					<label class="label">
@@ -237,7 +249,7 @@ function Checklist() {
 			</div>
 			<br/>
 			<div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}> 
-			<div><img src="tiles/can-tile.png" /></div>
+			<div><img src="/tiles/can-tile.png" /></div>
 			<div style={{height:"30px"}}>
 				<div>
 					<label class="label">
@@ -253,7 +265,7 @@ function Checklist() {
 			</div>
 			<br/>
 			<div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}> 
-			<div><img src="tiles/cup-tile.png" /></div>
+			<div><img src="/tiles/cup-tile.png" /></div>
 			<div style={{height:"30px"}}>
 				<div>
 					<label class="label">
@@ -269,7 +281,7 @@ function Checklist() {
 			</div>
 			<br/>
 			<div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}> 
-			<div><img src="tiles/fork-tile.png" /></div>
+			<div><img src="/tiles/fork-tile.png" /></div>
 			<div style={{height:"30px"}}>
 				<div>
 					<label class="label">
@@ -285,7 +297,7 @@ function Checklist() {
 			</div>
 			<br/>
 			<div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}> 
-			<div><img src="tiles/jug-tile.png" /></div>
+			<div><img src="/tiles/jug-tile.png" /></div>
 			<div style={{height:"30px"}}>
 				<div>
 					<label class="label">
@@ -301,7 +313,7 @@ function Checklist() {
 			</div>
 			<br/>
 			<div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}> 
-			<div><img src="tiles/knife-tile.png" /></div>
+			<div><img src="/tiles/knife-tile.png" /></div>
 			<div style={{height:"30px"}}>
 				<div>
 					<label class="label">
@@ -319,7 +331,7 @@ function Checklist() {
 		</div>
 		<div class="col-md-3" style={{position: "relative", overflow: "hidden"}}>
 			<div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}> 
-			<div><img src="tiles/spoon-tile.png" /></div>
+			<div><img src="/tiles/spoon-tile.png" /></div>
 			<div style={{height:"30px"}}>
 				<div>
 					<label class="label">
@@ -335,7 +347,7 @@ function Checklist() {
 			</div>
 			<br/>
 			<div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}> 
-			<div><img src="tiles/scissors-tile.png" /></div>
+			<div><img src="/tiles/scissors-tile.png" /></div>
 			<div style={{height:"30px"}}>
 				<div>
 					<label class="label">
@@ -351,7 +363,7 @@ function Checklist() {
 			</div>
 			<br/>
 			<div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}> 
-			<div><img src="tiles/spraypaint-tile.png" /></div>
+			<div><img src="/tiles/spraypaint-tile.png" /></div>
 			<div style={{height:"30px"}}>
 				<div>
 					<label class="label">
@@ -367,7 +379,7 @@ function Checklist() {
 			</div>
 			<br/>
 			<div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}> 
-			<div><img src="tiles/stickers-tile.png" /></div>
+			<div><img src="/tiles/stickers-tile.png" /></div>
 			<div style={{height:"30px"}}>
 				<div>
 					<label class="label">
@@ -383,7 +395,7 @@ function Checklist() {
 			</div>
 			<br/>
 			<div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}> 
-			<div><img src="tiles/string-tile.png" /></div>
+			<div><img src="/tiles/string-tile.png" /></div>
 			<div style={{height:"30px"}}>
 				<div>
 					<label class="label">
@@ -399,7 +411,7 @@ function Checklist() {
 			</div>
 			<br/>
 			<div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}> 
-			<div><img src="tiles/twine-tile.png" /></div>
+			<div><img src="/tiles/twine-tile.png" /></div>
 			<div style={{height:"30px"}}>
 				<div>
 					<label class="label">
@@ -421,35 +433,35 @@ function Checklist() {
 			<br/>
 			<div> 
 				<div style={{width:"25px", height: "25px", float:"left", verticalAlign:"middle"}}>
-					<img src="icons/CARDBOARD.png" style={{width:"25px", height: "25px", float:"left", verticalAlign:"middle"}} alt=""/>
+					<img src="/icons/CARDBOARD.png" style={{width:"25px", height: "25px", float:"left", verticalAlign:"middle"}} alt=""/>
 				</div> 
-				<div style={{merginLeft: "40px"}}>Cardboard</div>
+				<div style={{merginLeft: "40px"}}>&nbsp;Cardboard</div>
 			</div>
 			<br/>
 			<div> 
 				<div style={{width:"25px", height: "25px", float:"left", verticalAlign:"middle"}}>
-					<img src="icons/paintbrush.png" style={{width:"25px", height: "25px", float:"left", verticalAlign:"middle"}} alt=""/>
+					<img src="/icons/paintbrush.png" style={{width:"25px", height: "25px", float:"left", verticalAlign:"middle"}} alt=""/>
 				</div> 
-				<div style={{merginLeft: "40px"}}>Paint</div>
+				<div style={{merginLeft: "40px"}}>&nbsp;Paint</div>
 			</div>
 			<br/>
 			<div> 
 				<div style={{width:"25px", height: "25px", float:"left", verticalAlign:"middle"}}>
-					<img src="icons/milkgallon.png" style={{width:"25px", height: "25px", float:"left", verticalAlign:"middle"}} alt=""/>
+					<img src="/icons/milkgallon.png" style={{width:"25px", height: "25px", float:"left", verticalAlign:"middle"}} alt=""/>
 				</div> 
-				<div style={{merginLeft: "40px"}}>Plastic Bottle</div>
+				<div style={{merginLeft: "40px"}}>&nbsp;Plastic Bottle</div>
 			</div>
 			<br/>
 			<div> 
 				<div style={{width:"25px", height: "25px", float:"left", verticalAlign:"middle"}}>
-					<img src="icons/balloftwine.png" style={{width:"25px", height: "25px", float:"left", verticalAlign:"middle"}} alt=""/>
+					<img src="/icons/balloftwine.png" style={{width:"25px", height: "25px", float:"left", verticalAlign:"middle"}} alt=""/>
 				</div> 
-				<div style={{merginLeft: "40px"}}>Twine</div>
+				<div style={{merginLeft: "40px"}}>&nbsp;Twine</div>
 			</div>
 			<br/>
 			<br/>
 			<div style={{position:"relative", bottom: "20px", left:"0px", width:"100%"}}>
-				<center><input type="button" name="button" id="button" value="Find Recipes"/><br/></center>
+				<center><Link to="/results"><input type="button" name="button" id="button" value="Find Recipes" class="btn btn-primary"/></Link></center><br/>
 			</div>
 			
 		</div>
@@ -486,6 +498,7 @@ function Achievements() {
 			  </div>
 			</div>
           <br/>
+		  <br/>
           <br/>
         </div>
       </div>
@@ -501,8 +514,32 @@ function Achievements() {
 				1/1
 				</div>
 			</div>
-          <br/>
-          <br/>
+		  <br/>Complete! Share it with your friends.<br/>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="none" aria-hidden="true" class="svg-icon ">
+				<path d="M36 18a18 18 0 10-20.81 17.78V23.2h-4.57V18h4.57v-3.97c0-4.5 2.68-7 6.8-7 1.97 0 4.03.35 4.03.35v4.43h-2.28c-2.23 0-2.93 1.4-2.93 2.81V18h5l-.8 5.2h-4.2v12.58A18 18 0 0036 18z" fill="#1877F2"></path>
+			</svg>&nbsp;&nbsp;&nbsp;
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="none" aria-hidden="true" class="svg-icon ">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M33.75 7.93c-1.16.53-2.4.88-3.71 1.04a6.61 6.61 0 002.84-3.66 12.73 12.73 0 01-4.1 1.6 6.37 6.37 0 00-4.72-2.09 6.55 6.55 0 00-6.46 6.63c0 .52.05 1.02.16 1.5A18.2 18.2 0 014.44 6.04a6.75 6.75 0 002 8.85 6.35 6.35 0 01-2.93-.83v.09c0 3.2 2.23 5.89 5.2 6.5a6.16 6.16 0 01-2.93.1 6.49 6.49 0 006.04 4.6 12.76 12.76 0 01-9.57 2.76 18 18 0 009.9 2.97c11.9 0 18.4-10.1 18.4-18.85l-.02-.86c1.26-.94 2.36-2.1 3.22-3.43z" fill="#1DA1F2"></path>
+			</svg>&nbsp;&nbsp;&nbsp;
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="none" aria-hidden="true" class="svg-icon ">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M18 0c-4.89 0-5.5.02-7.42.1C8.66.2 7.35.5 6.2.96a8.82 8.82 0 00-3.19 2.07c-1 1-1.62 2-2.08 3.19a13.21 13.21 0 00-.83 4.37C.02 12.5 0 13.1 0 18c0 4.89.02 5.5.1 7.42.1 1.92.4 3.23.84 4.37a8.82 8.82 0 002.08 3.19c1 1 2 1.62 3.19 2.08 1.14.44 2.45.74 4.37.83 1.92.09 2.53.11 7.42.11 4.89 0 5.5-.02 7.42-.1 1.92-.1 3.23-.4 4.37-.84a8.82 8.82 0 003.19-2.08c1-1 1.62-2 2.08-3.19.44-1.14.74-2.45.83-4.37.09-1.92.11-2.53.11-7.42 0-4.89-.02-5.5-.1-7.42-.1-1.92-.4-3.23-.84-4.37a8.82 8.82 0 00-2.08-3.19c-1-1-2-1.62-3.19-2.07A13.21 13.21 0 0025.42.1C23.5.02 22.9 0 18 0zm0 3.24c4.8 0 5.38.02 7.27.1 1.76.09 2.71.38 3.35.63.84.32 1.44.71 2.07 1.34a5.58 5.58 0 011.34 2.07c.25.64.54 1.6.62 3.35.09 1.9.1 2.46.1 7.27 0 4.8-.01 5.38-.1 7.27a9.96 9.96 0 01-.62 3.35 5.58 5.58 0 01-1.34 2.07 5.58 5.58 0 01-2.07 1.34c-.64.25-1.6.54-3.35.62-1.9.09-2.46.1-7.27.1-4.8 0-5.38-.01-7.27-.1a9.96 9.96 0 01-3.35-.62 5.58 5.58 0 01-2.07-1.34 5.58 5.58 0 01-1.34-2.07 9.96 9.96 0 01-.62-3.35c-.09-1.9-.1-2.46-.1-7.27 0-4.8.01-5.38.1-7.27.08-1.76.37-2.71.62-3.35.32-.84.71-1.44 1.34-2.07a5.58 5.58 0 012.07-1.34 9.96 9.96 0 013.35-.62c1.9-.09 2.46-.1 7.27-.1zm0 5.52a9.24 9.24 0 100 18.48 9.24 9.24 0 000-18.48zM18 24a6 6 0 110-12 6 6 0 010 12zM29.77 8.4a2.16 2.16 0 11-4.32 0 2.16 2.16 0 014.32 0z" fill="#fff"></path>
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M18 0c-4.89 0-5.5.02-7.42.1C8.66.2 7.35.5 6.2.96a8.82 8.82 0 00-3.19 2.07c-1 1-1.62 2-2.08 3.19a13.21 13.21 0 00-.83 4.37C.02 12.5 0 13.1 0 18c0 4.89.02 5.5.1 7.42.1 1.92.4 3.23.84 4.37a8.82 8.82 0 002.08 3.19c1 1 2 1.62 3.19 2.08 1.14.44 2.45.74 4.37.83 1.92.09 2.53.11 7.42.11 4.89 0 5.5-.02 7.42-.1 1.92-.1 3.23-.4 4.37-.84a8.82 8.82 0 003.19-2.08c1-1 1.62-2 2.08-3.19.44-1.14.74-2.45.83-4.37.09-1.92.11-2.53.11-7.42 0-4.89-.02-5.5-.1-7.42-.1-1.92-.4-3.23-.84-4.37a8.82 8.82 0 00-2.08-3.19c-1-1-2-1.62-3.19-2.07A13.21 13.21 0 0025.42.1C23.5.02 22.9 0 18 0zm0 3.24c4.8 0 5.38.02 7.27.1 1.76.09 2.71.38 3.35.63.84.32 1.44.71 2.07 1.34a5.58 5.58 0 011.34 2.07c.25.64.54 1.6.62 3.35.09 1.9.1 2.46.1 7.27 0 4.8-.01 5.38-.1 7.27a9.96 9.96 0 01-.62 3.35 5.58 5.58 0 01-1.34 2.07 5.58 5.58 0 01-2.07 1.34c-.64.25-1.6.54-3.35.62-1.9.09-2.46.1-7.27.1-4.8 0-5.38-.01-7.27-.1a9.96 9.96 0 01-3.35-.62 5.58 5.58 0 01-2.07-1.34 5.58 5.58 0 01-1.34-2.07 9.96 9.96 0 01-.62-3.35c-.09-1.9-.1-2.46-.1-7.27 0-4.8.01-5.38.1-7.27.08-1.76.37-2.71.62-3.35.32-.84.71-1.44 1.34-2.07a5.58 5.58 0 012.07-1.34 9.96 9.96 0 013.35-.62c1.9-.09 2.46-.1 7.27-.1zm0 5.52a9.24 9.24 0 100 18.48 9.24 9.24 0 000-18.48zM18 24a6 6 0 110-12 6 6 0 010 12zM29.77 8.4a2.16 2.16 0 11-4.32 0 2.16 2.16 0 014.32 0z" fill="url(#paint0_radial)"></path>
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M18 0c-4.89 0-5.5.02-7.42.1C8.66.2 7.35.5 6.2.96a8.82 8.82 0 00-3.19 2.07c-1 1-1.62 2-2.08 3.19a13.21 13.21 0 00-.83 4.37C.02 12.5 0 13.1 0 18c0 4.89.02 5.5.1 7.42.1 1.92.4 3.23.84 4.37a8.82 8.82 0 002.08 3.19c1 1 2 1.62 3.19 2.08 1.14.44 2.45.74 4.37.83 1.92.09 2.53.11 7.42.11 4.89 0 5.5-.02 7.42-.1 1.92-.1 3.23-.4 4.37-.84a8.82 8.82 0 003.19-2.08c1-1 1.62-2 2.08-3.19.44-1.14.74-2.45.83-4.37.09-1.92.11-2.53.11-7.42 0-4.89-.02-5.5-.1-7.42-.1-1.92-.4-3.23-.84-4.37a8.82 8.82 0 00-2.08-3.19c-1-1-2-1.62-3.19-2.07A13.21 13.21 0 0025.42.1C23.5.02 22.9 0 18 0zm0 3.24c4.8 0 5.38.02 7.27.1 1.76.09 2.71.38 3.35.63.84.32 1.44.71 2.07 1.34a5.58 5.58 0 011.34 2.07c.25.64.54 1.6.62 3.35.09 1.9.1 2.46.1 7.27 0 4.8-.01 5.38-.1 7.27a9.96 9.96 0 01-.62 3.35 5.58 5.58 0 01-1.34 2.07 5.58 5.58 0 01-2.07 1.34c-.64.25-1.6.54-3.35.62-1.9.09-2.46.1-7.27.1-4.8 0-5.38-.01-7.27-.1a9.96 9.96 0 01-3.35-.62 5.58 5.58 0 01-2.07-1.34 5.58 5.58 0 01-1.34-2.07 9.96 9.96 0 01-.62-3.35c-.09-1.9-.1-2.46-.1-7.27 0-4.8.01-5.38.1-7.27.08-1.76.37-2.71.62-3.35.32-.84.71-1.44 1.34-2.07a5.58 5.58 0 012.07-1.34 9.96 9.96 0 013.35-.62c1.9-.09 2.46-.1 7.27-.1zm0 5.52a9.24 9.24 0 100 18.48 9.24 9.24 0 000-18.48zM18 24a6 6 0 110-12 6 6 0 010 12zM29.77 8.4a2.16 2.16 0 11-4.32 0 2.16 2.16 0 014.32 0z" fill="url(#paint1_radial)"></path>
+				<defs>
+					<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(-78.89 28.52 12.32) scale(36.6879)">
+						<stop stop-color="#FED576"></stop>
+						<stop offset=".14" stop-color="#FED576"></stop>
+						<stop offset=".52" stop-color="#EE6141"></stop>
+						<stop offset="1" stop-color="#BF348F"></stop>
+					</radialGradient>
+					<radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(-.8 2280.97 -1835.77) scale(46.2902 36.9531)">
+						<stop offset=".69" stop-color="#AE3596" stop-opacity="0"></stop>
+						<stop offset=".82" stop-color="#813BAB"></stop>
+						<stop offset=".95" stop-color="#3E6ADD"></stop>
+					</radialGradient>
+				</defs>
+			</svg>
+         <br/>
         </div>
       </div>
    </div>
@@ -518,6 +555,7 @@ function Achievements() {
 				</div>
 			</div>
           <br/>
+		  <br/>
           <br/>
         </div>
       </div>
@@ -533,7 +571,31 @@ function Achievements() {
 				1/1
 				</div>
 			</div>
-          <br/>
+		  <br/>Complete! Share it with your friends.<br/>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="none" aria-hidden="true" class="svg-icon ">
+				<path d="M36 18a18 18 0 10-20.81 17.78V23.2h-4.57V18h4.57v-3.97c0-4.5 2.68-7 6.8-7 1.97 0 4.03.35 4.03.35v4.43h-2.28c-2.23 0-2.93 1.4-2.93 2.81V18h5l-.8 5.2h-4.2v12.58A18 18 0 0036 18z" fill="#1877F2"></path>
+			</svg>&nbsp;&nbsp;&nbsp;
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="none" aria-hidden="true" class="svg-icon ">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M33.75 7.93c-1.16.53-2.4.88-3.71 1.04a6.61 6.61 0 002.84-3.66 12.73 12.73 0 01-4.1 1.6 6.37 6.37 0 00-4.72-2.09 6.55 6.55 0 00-6.46 6.63c0 .52.05 1.02.16 1.5A18.2 18.2 0 014.44 6.04a6.75 6.75 0 002 8.85 6.35 6.35 0 01-2.93-.83v.09c0 3.2 2.23 5.89 5.2 6.5a6.16 6.16 0 01-2.93.1 6.49 6.49 0 006.04 4.6 12.76 12.76 0 01-9.57 2.76 18 18 0 009.9 2.97c11.9 0 18.4-10.1 18.4-18.85l-.02-.86c1.26-.94 2.36-2.1 3.22-3.43z" fill="#1DA1F2"></path>
+			</svg>&nbsp;&nbsp;&nbsp;
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="none" aria-hidden="true" class="svg-icon ">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M18 0c-4.89 0-5.5.02-7.42.1C8.66.2 7.35.5 6.2.96a8.82 8.82 0 00-3.19 2.07c-1 1-1.62 2-2.08 3.19a13.21 13.21 0 00-.83 4.37C.02 12.5 0 13.1 0 18c0 4.89.02 5.5.1 7.42.1 1.92.4 3.23.84 4.37a8.82 8.82 0 002.08 3.19c1 1 2 1.62 3.19 2.08 1.14.44 2.45.74 4.37.83 1.92.09 2.53.11 7.42.11 4.89 0 5.5-.02 7.42-.1 1.92-.1 3.23-.4 4.37-.84a8.82 8.82 0 003.19-2.08c1-1 1.62-2 2.08-3.19.44-1.14.74-2.45.83-4.37.09-1.92.11-2.53.11-7.42 0-4.89-.02-5.5-.1-7.42-.1-1.92-.4-3.23-.84-4.37a8.82 8.82 0 00-2.08-3.19c-1-1-2-1.62-3.19-2.07A13.21 13.21 0 0025.42.1C23.5.02 22.9 0 18 0zm0 3.24c4.8 0 5.38.02 7.27.1 1.76.09 2.71.38 3.35.63.84.32 1.44.71 2.07 1.34a5.58 5.58 0 011.34 2.07c.25.64.54 1.6.62 3.35.09 1.9.1 2.46.1 7.27 0 4.8-.01 5.38-.1 7.27a9.96 9.96 0 01-.62 3.35 5.58 5.58 0 01-1.34 2.07 5.58 5.58 0 01-2.07 1.34c-.64.25-1.6.54-3.35.62-1.9.09-2.46.1-7.27.1-4.8 0-5.38-.01-7.27-.1a9.96 9.96 0 01-3.35-.62 5.58 5.58 0 01-2.07-1.34 5.58 5.58 0 01-1.34-2.07 9.96 9.96 0 01-.62-3.35c-.09-1.9-.1-2.46-.1-7.27 0-4.8.01-5.38.1-7.27.08-1.76.37-2.71.62-3.35.32-.84.71-1.44 1.34-2.07a5.58 5.58 0 012.07-1.34 9.96 9.96 0 013.35-.62c1.9-.09 2.46-.1 7.27-.1zm0 5.52a9.24 9.24 0 100 18.48 9.24 9.24 0 000-18.48zM18 24a6 6 0 110-12 6 6 0 010 12zM29.77 8.4a2.16 2.16 0 11-4.32 0 2.16 2.16 0 014.32 0z" fill="#fff"></path>
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M18 0c-4.89 0-5.5.02-7.42.1C8.66.2 7.35.5 6.2.96a8.82 8.82 0 00-3.19 2.07c-1 1-1.62 2-2.08 3.19a13.21 13.21 0 00-.83 4.37C.02 12.5 0 13.1 0 18c0 4.89.02 5.5.1 7.42.1 1.92.4 3.23.84 4.37a8.82 8.82 0 002.08 3.19c1 1 2 1.62 3.19 2.08 1.14.44 2.45.74 4.37.83 1.92.09 2.53.11 7.42.11 4.89 0 5.5-.02 7.42-.1 1.92-.1 3.23-.4 4.37-.84a8.82 8.82 0 003.19-2.08c1-1 1.62-2 2.08-3.19.44-1.14.74-2.45.83-4.37.09-1.92.11-2.53.11-7.42 0-4.89-.02-5.5-.1-7.42-.1-1.92-.4-3.23-.84-4.37a8.82 8.82 0 00-2.08-3.19c-1-1-2-1.62-3.19-2.07A13.21 13.21 0 0025.42.1C23.5.02 22.9 0 18 0zm0 3.24c4.8 0 5.38.02 7.27.1 1.76.09 2.71.38 3.35.63.84.32 1.44.71 2.07 1.34a5.58 5.58 0 011.34 2.07c.25.64.54 1.6.62 3.35.09 1.9.1 2.46.1 7.27 0 4.8-.01 5.38-.1 7.27a9.96 9.96 0 01-.62 3.35 5.58 5.58 0 01-1.34 2.07 5.58 5.58 0 01-2.07 1.34c-.64.25-1.6.54-3.35.62-1.9.09-2.46.1-7.27.1-4.8 0-5.38-.01-7.27-.1a9.96 9.96 0 01-3.35-.62 5.58 5.58 0 01-2.07-1.34 5.58 5.58 0 01-1.34-2.07 9.96 9.96 0 01-.62-3.35c-.09-1.9-.1-2.46-.1-7.27 0-4.8.01-5.38.1-7.27.08-1.76.37-2.71.62-3.35.32-.84.71-1.44 1.34-2.07a5.58 5.58 0 012.07-1.34 9.96 9.96 0 013.35-.62c1.9-.09 2.46-.1 7.27-.1zm0 5.52a9.24 9.24 0 100 18.48 9.24 9.24 0 000-18.48zM18 24a6 6 0 110-12 6 6 0 010 12zM29.77 8.4a2.16 2.16 0 11-4.32 0 2.16 2.16 0 014.32 0z" fill="url(#paint0_radial)"></path>
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M18 0c-4.89 0-5.5.02-7.42.1C8.66.2 7.35.5 6.2.96a8.82 8.82 0 00-3.19 2.07c-1 1-1.62 2-2.08 3.19a13.21 13.21 0 00-.83 4.37C.02 12.5 0 13.1 0 18c0 4.89.02 5.5.1 7.42.1 1.92.4 3.23.84 4.37a8.82 8.82 0 002.08 3.19c1 1 2 1.62 3.19 2.08 1.14.44 2.45.74 4.37.83 1.92.09 2.53.11 7.42.11 4.89 0 5.5-.02 7.42-.1 1.92-.1 3.23-.4 4.37-.84a8.82 8.82 0 003.19-2.08c1-1 1.62-2 2.08-3.19.44-1.14.74-2.45.83-4.37.09-1.92.11-2.53.11-7.42 0-4.89-.02-5.5-.1-7.42-.1-1.92-.4-3.23-.84-4.37a8.82 8.82 0 00-2.08-3.19c-1-1-2-1.62-3.19-2.07A13.21 13.21 0 0025.42.1C23.5.02 22.9 0 18 0zm0 3.24c4.8 0 5.38.02 7.27.1 1.76.09 2.71.38 3.35.63.84.32 1.44.71 2.07 1.34a5.58 5.58 0 011.34 2.07c.25.64.54 1.6.62 3.35.09 1.9.1 2.46.1 7.27 0 4.8-.01 5.38-.1 7.27a9.96 9.96 0 01-.62 3.35 5.58 5.58 0 01-1.34 2.07 5.58 5.58 0 01-2.07 1.34c-.64.25-1.6.54-3.35.62-1.9.09-2.46.1-7.27.1-4.8 0-5.38-.01-7.27-.1a9.96 9.96 0 01-3.35-.62 5.58 5.58 0 01-2.07-1.34 5.58 5.58 0 01-1.34-2.07 9.96 9.96 0 01-.62-3.35c-.09-1.9-.1-2.46-.1-7.27 0-4.8.01-5.38.1-7.27.08-1.76.37-2.71.62-3.35.32-.84.71-1.44 1.34-2.07a5.58 5.58 0 012.07-1.34 9.96 9.96 0 013.35-.62c1.9-.09 2.46-.1 7.27-.1zm0 5.52a9.24 9.24 0 100 18.48 9.24 9.24 0 000-18.48zM18 24a6 6 0 110-12 6 6 0 010 12zM29.77 8.4a2.16 2.16 0 11-4.32 0 2.16 2.16 0 014.32 0z" fill="url(#paint1_radial)"></path>
+				<defs>
+					<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(-78.89 28.52 12.32) scale(36.6879)">
+						<stop stop-color="#FED576"></stop>
+						<stop offset=".14" stop-color="#FED576"></stop>
+						<stop offset=".52" stop-color="#EE6141"></stop>
+						<stop offset="1" stop-color="#BF348F"></stop>
+					</radialGradient>
+					<radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(-.8 2280.97 -1835.77) scale(46.2902 36.9531)">
+						<stop offset=".69" stop-color="#AE3596" stop-opacity="0"></stop>
+						<stop offset=".82" stop-color="#813BAB"></stop>
+						<stop offset=".95" stop-color="#3E6ADD"></stop>
+					</radialGradient>
+				</defs>
+			</svg>
           <br/>
         </div>
       </div>
@@ -550,6 +612,7 @@ function Achievements() {
 				</div>
 			</div>
           <br/>
+		  <br/>
           <br/>
         </div>
       </div>
@@ -566,6 +629,7 @@ function Achievements() {
 				</div>
 			</div>
           <br/>
+		  <br/>
           <br/>
         </div>
       </div>
@@ -585,14 +649,14 @@ function Pictures() {
 <div class="container">
   <br/>
   <br/>
-  <div><h1>Gallery</h1> <h4>See Projects from Others!</h4></div>
+  <div><h1>Gallery</h1> <h6>See Projects submitted by other Crafters</h6></div>
   <br/>
   <br/>
-  <div><h3>Upload your Own Project!</h3>
+  <div><h4>Upload your Own Project!</h4>
 	<form action="">
-		<label for="img">Select image:</label>
-		<input type="file" id="img" name="img" accept="image/*"/>
-		<input type="submit"/>
+		<label class="form-label" for="img">Select image:</label>
+		<input type="file" class="form-control" id="img" name="img" accept="image/*"/>
+		<input type="submit" style={{float:"right"}} class="btn btn-primary"/>
 	</form>
   </div>
   <br/>
@@ -600,73 +664,73 @@ function Pictures() {
   <div class="row">
 	<div class="col-md-3" style={{position: "relative", overflow: "hidden"}}>
       <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
-		<div><img src="gallery/1.png" /></div>
+		<div><img src="/gallery/1.png" /></div>
 	  </div>
 	  <br/>
       <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
-		<div><img src="gallery/2.png" /></div>
+		<div><img src="/gallery/2.png" /></div>
 		</div>
 	  <br/>
       <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
-		<div><img src="gallery/3.png" /></div>
+		<div><img src="/gallery/3.png" /></div>
 	  </div>
 	  <br/>
       <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
-		<div><img src="gallery/4.png" /></div>
-	  </div>
-	  <br/>
-    </div>
-	<div class="col-md-3" style={{position: "relative", overflow: "hidden"}}>
-      <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
-		<div><img src="gallery/5.png" /></div>
-	  </div>
-	  <br/>
-      <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
-		<div><img src="gallery/6.png" /></div>
-	  </div>
-	  <br/>
-      <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
-		<div><img src="gallery/7.png" /></div>
-	  </div>
-	  <br/>
-      <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
-		<div><img src="gallery/8.png" /></div>
+		<div><img src="/gallery/4.png" /></div>
 	  </div>
 	  <br/>
     </div>
 	<div class="col-md-3" style={{position: "relative", overflow: "hidden"}}>
       <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
-		<div><img src="gallery/9.png" /></div>
+		<div><img src="/gallery/5.png" /></div>
 	  </div>
 	  <br/>
       <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
-		<div><img src="gallery/10.png" /></div>
+		<div><img src="/gallery/6.png" /></div>
 	  </div>
 	  <br/>
       <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
-		<div><img src="gallery/11.png" /></div>
+		<div><img src="/gallery/7.png" /></div>
 	  </div>
 	  <br/>
       <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
-		<div><img src="gallery/12.png" /></div>
+		<div><img src="/gallery/8.png" /></div>
 	  </div>
 	  <br/>
     </div>
 	<div class="col-md-3" style={{position: "relative", overflow: "hidden"}}>
       <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
-		<div><img src="gallery/13.png" /></div>
+		<div><img src="/gallery/9.png" /></div>
 	  </div>
 	  <br/>
       <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
-		<div><img src="gallery/14.png" /></div>
+		<div><img src="/gallery/10.png" /></div>
+	  </div>
+	  <br/>
+      <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
+		<div><img src="/gallery/11.png" /></div>
+	  </div>
+	  <br/>
+      <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
+		<div><img src="/gallery/12.png" /></div>
+	  </div>
+	  <br/>
+    </div>
+	<div class="col-md-3" style={{position: "relative", overflow: "hidden"}}>
+      <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
+		<div><img src="/gallery/13.png" /></div>
+	  </div>
+	  <br/>
+      <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
+		<div><img src="/gallery/14.png" /></div>
 		</div>
 	  <br/>
       <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
-		<div><img src="gallery/15.png" /></div>
+		<div><img src="/gallery/15.png" /></div>
 	  </div>
 	  <br/>
       <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
-		<div><img src="gallery/16.png" /></div>
+		<div><img src="/gallery/16.png" /></div>
 	  </div>
 	  <br/>
     </div>
@@ -681,7 +745,7 @@ function Pictures() {
 }
 
 
-function Quests() {
+function PlanOne() {
 	return (
 <div class="container" style={{border: "4px", borderColor: "grey", borderStyle: "solid"}}>
 <p><br/></p>
@@ -1022,5 +1086,218 @@ function Quests() {
 		</div>
 	);
 }
+
+function Results() {
+	return (
+<div class="container">
+  <br/>
+  <br/>
+  <div><h2>Results</h2>
+	 <br/>
+	  <h4><Link to="/checklist">&#60;&#60; Return to Ingredients Selection</Link></h4>
+  </div>
+  <br/>
+  <br/>
+  <div class="row">
+	  <div class="card col-md-4 col-xl-12">
+		<div class="card-header"> <Link to="/recipes/1"><h4>How To Make A Plastic Bird-Feeder (Sample Recipe #1)</h4></Link> </div>
+		<ul class="list-group list-group-flush">
+		  <li class="list-group-item">Project Description</li>
+		</ul>
+		<br/>
+		<br/>
+		<div class="card-header"> <Link to="/recipes/2"><h4>Plastic Playhouse (Sample Recipe #2)</h4></Link> </div>
+		<ul class="list-group list-group-flush">
+		  <li class="list-group-item">Project Description</li>
+		</ul>
+		<br/>
+		<br/>
+		<div class="card-header"> <Link to="/recipes/3"><h4>Plastic Bottle Pots (Sample Recipe #3)</h4></Link> </div>
+		<ul class="list-group list-group-flush">
+		  <li class="list-group-item">Project Description</li>
+		</ul>
+		<br/>
+		<br/>
+	  </div>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <hr/>
+  <div class="row"> </div>
+</div>
+	);
+}
+
+function RecipeOne() {
+	return (
+<div class="container">
+  <br/>
+  <br/>
+  <div><h2>How To Make A Plastic Bird-Feeder (Sample Recipe #1)</h2>
+	 <br/>
+	  <h4><Link to="/results">&#60;&#60; Return to Results</Link></h4>
+  </div>
+  <br/>
+  <br/>
+  <div class="row">
+	  <div class="card col-md-4 col-xl-8">
+		<div class="card-header"> <h3>Ingredients</h3> </div>
+		<ul class="list-group list-group-flush">
+		  <li class="list-group-item">1 Plastic Bottle</li>
+		  <li class="list-group-item">2 Mixing Spoons</li>
+		  <li class="list-group-item">Bird Seeds</li>
+		  <li class="list-group-item">Twine</li>
+		  <li class="list-group-item">Scissors</li>
+		</ul>
+		<br/>
+		<br/>
+		<div class="card-header"> <h3>Steps</h3> </div>
+		<ol class="list-group list-group-numbered">
+		  <li class="list-group-item">1) Near the bottom of the bottle, cut a little larger than a quarter size hole into the side of the bottle. Poke a spoon handle through it until it hits the other side of the bottle and cut a small hole there so the handle can go through.</li>
+		  <li class="list-group-item">2) Repeat step 1 higher up on the bottle for the other spoon.</li>
+		  <li class="list-group-item">3) Tie a piece of twine around the neck of the bottle as a hanger for the birdfeeder.</li>
+		  <li class="list-group-item">4) Fill the bottle with the birdseed and hang your feeder outside.</li>
+		  <li class="list-group-item">5) The seed will fall out onto the spoons as the birds eat.</li>
+		  <li class="list-group-item">6) Fill up when needed!</li>
+		</ol>
+	  </div>
+	  <div class="card col-md-4">
+		<div class="card-header"> <h3>Finished Product</h3> </div>
+		<img src="/projects/Homemade-Bird-Feeder-Plastic-Bottle-pin-600x875.jpg"/>
+	  </div>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <hr/>
+  <div class="row"> </div>
+</div>
+	);
+}
+
+function RecipeTwo() {
+	return (
+<div class="container">
+  <br/>
+  <br/>
+  <div><h2>Plastic Playhouse (Sample Recipe #2)</h2>
+	 <br/>
+	  <h4><Link to="/results">&#60;&#60; Return to Results</Link></h4>
+  </div>
+  <br/>
+  <br/>
+  <div class="row">
+	  <div class="card col-md-4 col-xl-8">
+		<div class="card-header"> <h3>Ingredients</h3> </div>
+		<ul class="list-group list-group-flush">
+		  <li class="list-group-item">Milk Gallon</li>
+		  <li class="list-group-item">Scissors</li>
+		  <li class="list-group-item">Stickers(optional)</li>
+		  <li class="list-group-item">Construction Paper(optional)</li>
+		  <li class="list-group-item">Glue</li>
+		  <li class="list-group-item">Markers</li>
+		  <li class="list-group-item">Paint(optional)</li>
+		</ul>
+		<br/>
+		<br/>
+		<div class="card-header"> <h3>Steps</h3> </div>
+		<ol class="list-group list-group-numbered">
+		  <li class="list-group-item">1) Use your marker to draw the entrance of your ‘playhouse’! Go wild!</li>
+		  <li class="list-group-item">2) Now add windows(if you want)!</li>
+		  <li class="list-group-item">3) Now the fun-part! Decorate your play-house! Paint it red to look like a fire-station! Or use construction paper to make windowsill! It’s up to you!</li>
+		</ol>
+	  </div>
+	  <div class="card col-md-4">
+		<div class="card-header"> <h3>Finished Product</h3> </div>
+		<img src="/projects/482383_338954696227189_231056099_n.jpg"/>
+	  </div>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <hr/>
+  <div class="row"> </div>
+</div>
+	);
+}
+
+function RecipeThree() {
+	return (
+<div class="container">
+  <br/>
+  <br/>
+  <div><h2>Plastic Bottle Pots (Sample Recipe #3)</h2>
+	 <br/>
+	  <h4><Link to="/results">&#60;&#60; Return to Results</Link></h4>
+  </div>
+  <br/>
+  <br/>
+  <div class="row">
+	  <div class="card col-md-4 col-xl-8">
+		<div class="card-header"> <h3>Ingredients</h3> </div>
+		<ul class="list-group list-group-flush">
+		  <li class="list-group-item">Milk Gallon</li>
+		  <li class="list-group-item">Scissors</li>
+		  <li class="list-group-item">Stickers(optional)</li>
+		  <li class="list-group-item">Construction Paper(optional)</li>
+		  <li class="list-group-item">Glue</li>
+		  <li class="list-group-item">Markers</li>
+		  <li class="list-group-item">Paint(optional)</li>
+		</ul>
+		<br/>
+		<br/>
+		<div class="card-header"> <h3>Steps</h3> </div>
+		<ol class="list-group list-group-numbered">
+		  <li class="list-group-item">1) Use your marker to draw the entrance of your ‘playhouse’! Go wild!</li>
+		  <li class="list-group-item">2) Now add windows(if you want)!</li>
+		  <li class="list-group-item">3) Now the fun-part! Decorate your play-house! Paint it red to look like a fire-station! Or use construction paper to make windowsill! It’s up to you!</li>
+		</ol>
+	  </div>
+	  <div class="card col-md-4">
+		<div class="card-header"> <h3>Finished Product</h3> </div>
+		<img src="/projects/PlasticBottlePots-480x270.jpg"/>
+	  </div>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <hr/>
+  <div class="row"> </div>
+</div>
+	);
+}
+
+function Quests() {
+	return (
+<div class="container">
+  <br/>
+  <br/>
+  <div><h2>Quests</h2>
+	 <br/>
+	  <h4>Lesson Plans for kids to go on Epic learning Quests!</h4>
+  </div>
+  <br/>
+  <br/>
+  <div class="row">
+	  <div class="card col-md-4 col-xl-12">
+		<div class="card-header"> <Link to="/plans/1"><h4>Craftable Plastics Lesson Plan (Sample Sample #1)</h4></Link> </div>
+		<ul class="list-group list-group-flush">
+		  <li class="list-group-item">Quest Description</li>
+		</ul>
+		<br/>
+		<br/>
+	  </div>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <hr/>
+  <div class="row"> </div>
+</div>
+	);
+}
+
+
 
 export default App;

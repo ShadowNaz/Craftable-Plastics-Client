@@ -5,7 +5,7 @@ function Footer() {
 		<div class="container">
 		  <div class="row">
 			<div class="col-md-2">
-			  <div class="card"> <img class="card-img-top" src="gallery/gallery-preview.png" width="150" alt="Card image cap"/>
+			  <div class="card"> <img class="card-img-top" src="/gallery/gallery-preview.png" width="150" alt="Card image cap"/>
 			  </div>
 			</div>
 			<div class="card col-md-2 col-xl-10">
