@@ -1287,7 +1287,7 @@ function Quests() {
 	  <div class="card col-md-4 col-xl-12">
 		<div class="card-header"> <Link to="/plans/1"><h4>Craftable Plastics Lesson Plan (Sample Sample #1)</h4></Link> </div>
 		<ul class="list-group list-group-flush">
-		  <li class="list-group-item">Quest Description</li>
+		  <li class="list-group-item">An introduction to the ideas of craftable plastics, introducing the ideas of non resuable and reusable plastics and their impacts.</li>
 		</ul>
 		<br/>
 		<br/>
