@@ -1,6 +1,22 @@
 
 function Footer() {
   return (
+  <div>
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-2">
+			  <div class="card"> <img class="card-img-top" src="gallery/gallery-preview.png" width="150" alt="Card image cap"/>
+			  </div>
+			</div>
+			<div class="card col-md-2 col-xl-10">
+			  <div class="card-body">
+				<h2 class="card-title"><a href="/pictures" class="card-link">Projects Gallery</a></h2>
+				<h4 class="card-subtitle mb-2 text-muted">See what projects others have completed!</h4>
+				<p class="card-text">The <a href="/pictures" class="card-link">Gallery</a> contains pictures submitted by other users and their completed projects. See what is possible and submit your own!</p>
+				</div>
+			</div>
+		  </div>
+		</div>
 		<div id="footer">
 			<div class="contain gutter-top-in-fixed-3 gutter-bottom-in-fixed-4">
 				<div class="footer-dark gutter-horiz-in">
@@ -111,6 +127,7 @@ function Footer() {
 				</div>
 			</div>
 		</div>
+	</div>
   );
 }
 

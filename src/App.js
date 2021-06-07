@@ -92,6 +92,9 @@ function App() {
 					<Route path="/quests">
 						<Quests />
 					</Route>
+					<Route path="/pictures">
+						<Pictures />
+					</Route>
 				</Switch>
 			</div>
 		</Router>
@@ -463,11 +466,220 @@ function Checklist() {
 
 function Achievements() {
 	return (
-		<div>
-			<h2>Achievements</h2>
-		</div>
+<div class="container">
+  <br/>
+  <br/>
+  <div><h2>Quests - See what you have completed</h2>
+  </div>
+  <br/>
+  <br/>
+  <div class="row card-group gutter-bottom-4">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title"><b>Dedicated</b></h2>
+          <p class="card-text">Complete 1 Project Every Week for 4 Weeks.</p>
+			<div class="progress" style={{height: "30px"}}>
+				<div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40"
+				aria-valuemin="0" aria-valuemax="100" style={{width:"75%"}}>
+				3/4
+			  </div>
+			</div>
+          <br/>
+          <br/>
+        </div>
+      </div>
+		<br/>
+		<br/>
+       <div class="card">
+        <div class="card-body">
+          <h2 class="card-title"><b>Inventor</b></h2>
+          <p class="card-text">Submit a Project/Idea to the Website.</p>
+			<div class="progress" style={{height: "30px"}}>
+				<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40"
+				aria-valuemin="0" aria-valuemax="100" style={{width:"100%"}}>
+				1/1
+				</div>
+			</div>
+          <br/>
+          <br/>
+        </div>
+      </div>
+   </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title"><b>Expert Crafter</b></h2>
+          <p class="card-text">Complete 12 Projects</p>
+			<div class="progress" style={{height: "30px"}}>
+				<div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40"
+				aria-valuemin="0" aria-valuemax="100" style={{width:"50%"}}>
+				6/12
+				</div>
+			</div>
+          <br/>
+          <br/>
+        </div>
+      </div>
+		<br/>
+		<br/>
+       <div class="card">
+        <div class="card-body">
+          <h2 class="card-title"><b>Fledgling</b></h2>
+          <p class="card-text">Complete Your First Project</p>
+			<div class="progress" style={{height: "30px"}}>
+				<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40"
+				aria-valuemin="0" aria-valuemax="100" style={{width:"100%"}}>
+				1/1
+				</div>
+			</div>
+          <br/>
+          <br/>
+        </div>
+      </div>
+   </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title"><b>Recycler</b></h2>
+          <p class="card-text">Complete 1 Project Every Week for 8 Weeks</p>
+			<div class="progress" style={{height: "30px"}}>
+				<div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40"
+				aria-valuemin="0" aria-valuemax="100" style={{width:"37%"}}>
+				3/8
+				</div>
+			</div>
+          <br/>
+          <br/>
+        </div>
+      </div>
+		<br/>
+		<br/>
+       <div class="card">
+        <div class="card-body">
+          <h2 class="card-title"><b>Adventurer</b></h2>
+          <p class="card-text">Take Part in a Quest</p>
+			<div class="progress" style={{height: "30px"}}>
+				<div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40"
+				aria-valuemin="0" aria-valuemax="100" style={{width:"0%"}}>
+				0/1
+				</div>
+			</div>
+          <br/>
+          <br/>
+        </div>
+      </div>
+   </div>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <hr/>
+  <div class="row"> </div>
+</div>
 	);
 }
+
+function Pictures() {
+	return (
+<div class="container">
+  <br/>
+  <br/>
+  <div><h1>Gallery</h1> <h4>See Projects from Others!</h4></div>
+  <br/>
+  <br/>
+  <div><h3>Upload your Own Project!</h3>
+	<form action="">
+		<label for="img">Select image:</label>
+		<input type="file" id="img" name="img" accept="image/*"/>
+		<input type="submit"/>
+	</form>
+  </div>
+  <br/>
+  <br/>
+  <div class="row">
+	<div class="col-md-3" style={{position: "relative", overflow: "hidden"}}>
+      <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
+		<div><img src="gallery/1.png" /></div>
+	  </div>
+	  <br/>
+      <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
+		<div><img src="gallery/2.png" /></div>
+		</div>
+	  <br/>
+      <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
+		<div><img src="gallery/3.png" /></div>
+	  </div>
+	  <br/>
+      <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
+		<div><img src="gallery/4.png" /></div>
+	  </div>
+	  <br/>
+    </div>
+	<div class="col-md-3" style={{position: "relative", overflow: "hidden"}}>
+      <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
+		<div><img src="gallery/5.png" /></div>
+	  </div>
+	  <br/>
+      <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
+		<div><img src="gallery/6.png" /></div>
+	  </div>
+	  <br/>
+      <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
+		<div><img src="gallery/7.png" /></div>
+	  </div>
+	  <br/>
+      <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
+		<div><img src="gallery/8.png" /></div>
+	  </div>
+	  <br/>
+    </div>
+	<div class="col-md-3" style={{position: "relative", overflow: "hidden"}}>
+      <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
+		<div><img src="gallery/9.png" /></div>
+	  </div>
+	  <br/>
+      <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
+		<div><img src="gallery/10.png" /></div>
+	  </div>
+	  <br/>
+      <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
+		<div><img src="gallery/11.png" /></div>
+	  </div>
+	  <br/>
+      <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
+		<div><img src="gallery/12.png" /></div>
+	  </div>
+	  <br/>
+    </div>
+	<div class="col-md-3" style={{position: "relative", overflow: "hidden"}}>
+      <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
+		<div><img src="gallery/13.png" /></div>
+	  </div>
+	  <br/>
+      <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
+		<div><img src="gallery/14.png" /></div>
+		</div>
+	  <br/>
+      <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
+		<div><img src="gallery/15.png" /></div>
+	  </div>
+	  <br/>
+      <div class="tile ingredient tiles-item" style={{display: "block", left: "0px", top: "0px", transform: "translate3d(0px, 0px, 0px)"}}>
+		<div><img src="gallery/16.png" /></div>
+	  </div>
+	  <br/>
+    </div>
+</div>
+  <br/>
+  <br/>
+  <br/>
+  <hr/>
+  <div class="row"> </div>
+</div>
+	);
+}
+
 
 function Quests() {
 	return (
