@@ -747,7 +747,8 @@ function Pictures() {
 
 function PlanOne() {
 	return (
-<div class="container" style={{border: "4px", borderColor: "grey", borderStyle: "solid"}}>
+<div class="container">
+<div style={{border: "4px", borderColor: "grey", borderStyle: "solid"}}>
 <p><br/></p>
 <p><span>Craftable Plastics Lesson Plan</span></p>
 <p><span>Grade: 4 - 8 &nbsp;</span><span>Lesson: 50 Minutes&nbsp;</span></p>
@@ -1081,8 +1082,8 @@ function PlanOne() {
 		</table>
 </div>
 
-<div align="left"><br /></div>
-
+<div align="left"><br /></div></div>
+<br/><br/><hr/>
 		</div>
 	);
 }
@@ -1102,19 +1103,19 @@ function Results() {
 	  <div class="card col-md-4 col-xl-12">
 		<div class="card-header"> <Link to="/recipes/1"><h4>How To Make A Plastic Bird-Feeder (Sample Recipe #1)</h4></Link> </div>
 		<ul class="list-group list-group-flush">
-		  <li class="list-group-item">Project Description</li>
+		  <li class="list-group-item">Craft simple bird feeder great for use in the yard, using a plastic bottle and spoons, and a bit of twine you can help keep the birds near you fed.</li>
 		</ul>
 		<br/>
 		<br/>
 		<div class="card-header"> <Link to="/recipes/2"><h4>Plastic Playhouse (Sample Recipe #2)</h4></Link> </div>
 		<ul class="list-group list-group-flush">
-		  <li class="list-group-item">Project Description</li>
+		  <li class="list-group-item">Create fun and green homes for your toys, just grab a milk container, your normal crafting supplies and a bit of glue and paper and craft a home exactly how you want it.</li>
 		</ul>
 		<br/>
 		<br/>
 		<div class="card-header"> <Link to="/recipes/3"><h4>Plastic Bottle Pots (Sample Recipe #3)</h4></Link> </div>
 		<ul class="list-group list-group-flush">
-		  <li class="list-group-item">Project Description</li>
+		  <li class="list-group-item">Make your garden even more green by potting them in materials that would normally pollute the environment. Just grab some plastic bottles, scissors, and some optional spray paint for flair.</li>
 		</ul>
 		<br/>
 		<br/>
