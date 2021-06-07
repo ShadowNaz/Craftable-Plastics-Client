@@ -59,7 +59,7 @@ function App() {
 			<Link to="/quests">
 				<div class="card"> <img class="card-img-top" src="/quest-image.png" alt="Card image cap"/>
 				<div class="card-body" style={{backgroundColor: 'black', color: 'white'}}>
-					<h2 class="card-title"><b>Quests</b></h2>
+					<h2 class="card-title"><b>Classroom Quests</b></h2>
 					<p class="card-text">See what daily, weekly or monthly quests are available for you to do.</p>
 					<br/>
 					<br/>
@@ -484,7 +484,7 @@ function Achievements() {
 <div class="container">
   <br/>
   <br/>
-  <div><h2>Quests - See what you have completed</h2>
+  <div><h2>Achievements - See what you have completed</h2>
   </div>
   <br/>
   <br/>
@@ -1277,7 +1277,7 @@ function Quests() {
 <div class="container">
   <br/>
   <br/>
-  <div><h2>Quests</h2>
+  <div><h2>Classroom Quests</h2>
 	 <br/>
 	  <h4>Lesson Plans for kids to go on Epic learning Quests!</h4>
   </div>
