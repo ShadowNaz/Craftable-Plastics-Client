@@ -92,6 +92,9 @@ function App() {
 					<Route path="/quests">
 						<Quests />
 					</Route>
+					<Route path="/pictures">
+						<Pictures />
+					</Route>
 					<Route path="/results">
 						<Results />
 					</Route>
